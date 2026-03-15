@@ -1,4 +1,5 @@
 import { Reveal } from '@/components/ui/Reveal'
+import { Barcode } from 'lucide-react'
 
 export function BigNumbers() {
   return (
@@ -86,18 +87,9 @@ export function BigNumbers() {
                 </div>
 
                 <div className="mt-16 mb-8 relative w-full flex justify-center z-10">
-                  {/* Abstract representation of a card */}
-                  <div className="w-56 h-36 bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-xl shadow-2xl transform rotate-[-12deg] group-hover:rotate-[-5deg] group-hover:scale-105 transition-all duration-500 border border-white/20 p-5 flex flex-col justify-between backdrop-blur-sm">
-                    <div className="flex justify-between items-start">
-                      <div className="w-10 h-7 bg-white/20 rounded-md backdrop-blur-md"></div>
-                      <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-                        <div className="w-4 h-4 rounded-full bg-white/30"></div>
-                      </div>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="w-full h-2 bg-white/20 rounded-full"></div>
-                      <div className="w-2/3 h-2 bg-white/20 rounded-full"></div>
-                    </div>
+                  {/* Boleto representation card */}
+                  <div className="w-56 h-36 bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-xl shadow-2xl transform rotate-[-12deg] group-hover:rotate-[-5deg] group-hover:scale-105 transition-all duration-500 border border-white/20 p-5 flex items-center justify-center backdrop-blur-sm">
+                    <Barcode className="w-20 h-20 text-white/90" strokeWidth={1.5} />
                   </div>
                 </div>
               </div>

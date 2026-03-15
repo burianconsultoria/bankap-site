@@ -19028,6 +19028,28 @@ var ArrowRight = createLucideIcon("arrow-right", [["path", {
 	d: "m12 5 7 7-7 7",
 	key: "xquz4c"
 }]]);
+var Barcode = createLucideIcon("barcode", [
+	["path", {
+		d: "M3 5v14",
+		key: "1nt18q"
+	}],
+	["path", {
+		d: "M8 5v14",
+		key: "1ybrkv"
+	}],
+	["path", {
+		d: "M12 5v14",
+		key: "s699le"
+	}],
+	["path", {
+		d: "M17 5v14",
+		key: "ycjyhj"
+	}],
+	["path", {
+		d: "M21 5v14",
+		key: "nzette"
+	}]
+]);
 var Building2 = createLucideIcon("building-2", [
 	["path", {
 		d: "M10 12h4",
@@ -25058,110 +25080,110 @@ function TargetAudience() {
 //#region src/components/sections/BigNumbers.tsx
 function BigNumbers() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		"data-uid": "src/components/sections/BigNumbers.tsx:5:5",
+		"data-uid": "src/components/sections/BigNumbers.tsx:6:5",
 		"data-prohibitions": "[editContent]",
 		className: "py-20 lg:py-32 bg-white overflow-hidden",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/sections/BigNumbers.tsx:6:7",
+			"data-uid": "src/components/sections/BigNumbers.tsx:7:7",
 			"data-prohibitions": "[editContent]",
 			className: "container mx-auto px-4",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/sections/BigNumbers.tsx:7:9",
+				"data-uid": "src/components/sections/BigNumbers.tsx:8:9",
 				"data-prohibitions": "[]",
 				className: "text-center max-w-3xl mx-auto mb-16 lg:mb-24",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/BigNumbers.tsx:8:11",
+					"data-uid": "src/components/sections/BigNumbers.tsx:9:11",
 					"data-prohibitions": "[]",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						"data-uid": "src/components/sections/BigNumbers.tsx:9:13",
+						"data-uid": "src/components/sections/BigNumbers.tsx:10:13",
 						"data-prohibitions": "[]",
 						className: "text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans",
 						children: "Confiança traduzida em números"
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/BigNumbers.tsx:13:11",
+					"data-uid": "src/components/sections/BigNumbers.tsx:14:11",
 					"data-prohibitions": "[]",
 					delay: 100,
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/sections/BigNumbers.tsx:14:13",
+						"data-uid": "src/components/sections/BigNumbers.tsx:15:13",
 						"data-prohibitions": "[]",
 						className: "text-xl md:text-2xl text-brand-gray font-light leading-relaxed font-sans",
 						children: "Milhares de clientes, bilhões em transações e crescendo."
 					})
 				})]
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/sections/BigNumbers.tsx:20:9",
+				"data-uid": "src/components/sections/BigNumbers.tsx:21:9",
 				"data-prohibitions": "[editContent]",
 				className: "grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/sections/BigNumbers.tsx:22:11",
+						"data-uid": "src/components/sections/BigNumbers.tsx:23:11",
 						"data-prohibitions": "[]",
 						className: "lg:col-span-4 flex flex-col gap-6 lg:gap-8 h-full",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/BigNumbers.tsx:23:13",
+							"data-uid": "src/components/sections/BigNumbers.tsx:24:13",
 							"data-prohibitions": "[]",
 							delay: 200,
 							className: "flex-1 flex flex-col",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/BigNumbers.tsx:24:15",
+								"data-uid": "src/components/sections/BigNumbers.tsx:25:15",
 								"data-prohibitions": "[]",
 								className: "flex-1 w-full bg-brand-light rounded-[2rem] p-8 md:p-10 flex flex-col justify-center items-center text-center shadow-subtle hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-									"data-uid": "src/components/sections/BigNumbers.tsx:25:17",
+									"data-uid": "src/components/sections/BigNumbers.tsx:26:17",
 									"data-prohibitions": "[]",
 									className: "text-[28px] sm:text-4xl lg:text-[28px] xl:text-4xl 2xl:text-[40px] font-extrabold text-brand-dark mb-3 tracking-tight",
 									children: "+R$10.000.000.000"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/sections/BigNumbers.tsx:28:17",
+									"data-uid": "src/components/sections/BigNumbers.tsx:29:17",
 									"data-prohibitions": "[]",
 									className: "text-brand-gray text-lg font-sans",
 									children: "em créditos para empresas"
 								})]
 							})
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/BigNumbers.tsx:32:13",
+							"data-uid": "src/components/sections/BigNumbers.tsx:33:13",
 							"data-prohibitions": "[]",
 							delay: 300,
 							className: "flex-1 flex flex-col",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/BigNumbers.tsx:33:15",
+								"data-uid": "src/components/sections/BigNumbers.tsx:34:15",
 								"data-prohibitions": "[]",
 								className: "flex-1 w-full bg-brand-light rounded-[2rem] p-8 md:p-10 flex flex-col justify-center items-center text-center shadow-subtle hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:34:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:35:17",
 										"data-prohibitions": "[]",
 										className: "text-4xl sm:text-5xl lg:text-4xl xl:text-5xl font-extrabold text-brand-dark mb-3 tracking-tight",
 										children: "+1.700"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:37:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:38:17",
 										"data-prohibitions": "[]",
 										className: "text-brand-gray text-lg font-sans mb-6",
 										children: "clientes impactados"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:38:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:39:17",
 										"data-prohibitions": "[]",
 										className: "flex -space-x-4",
 										children: [
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-												"data-uid": "src/components/sections/BigNumbers.tsx:39:19",
+												"data-uid": "src/components/sections/BigNumbers.tsx:40:19",
 												"data-prohibitions": "[editContent]",
 												src: "https://img.usecurling.com/ppl/thumbnail?gender=female&seed=1",
 												alt: "Cliente",
 												className: "w-12 h-12 rounded-full border-4 border-brand-light object-cover relative z-30 shadow-sm"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-												"data-uid": "src/components/sections/BigNumbers.tsx:44:19",
+												"data-uid": "src/components/sections/BigNumbers.tsx:45:19",
 												"data-prohibitions": "[editContent]",
 												src: "https://img.usecurling.com/ppl/thumbnail?gender=male&seed=2",
 												alt: "Cliente",
 												className: "w-12 h-12 rounded-full border-4 border-brand-light object-cover relative z-20 shadow-sm"
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-												"data-uid": "src/components/sections/BigNumbers.tsx:49:19",
+												"data-uid": "src/components/sections/BigNumbers.tsx:50:19",
 												"data-prohibitions": "[editContent]",
 												src: "https://img.usecurling.com/ppl/thumbnail?gender=female&seed=3",
 												alt: "Cliente",
@@ -25174,26 +25196,26 @@ function BigNumbers() {
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/sections/BigNumbers.tsx:60:11",
+						"data-uid": "src/components/sections/BigNumbers.tsx:61:11",
 						"data-prohibitions": "[]",
 						className: "lg:col-span-4 flex flex-col min-h-[400px] lg:min-h-0",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/BigNumbers.tsx:61:13",
+							"data-uid": "src/components/sections/BigNumbers.tsx:62:13",
 							"data-prohibitions": "[]",
 							delay: 400,
 							className: "flex-1 flex flex-col",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/BigNumbers.tsx:62:15",
+								"data-uid": "src/components/sections/BigNumbers.tsx:63:15",
 								"data-prohibitions": "[]",
 								className: "flex-1 w-full bg-brand-light rounded-[2rem] overflow-hidden relative group",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									"data-uid": "src/components/sections/BigNumbers.tsx:63:17",
+									"data-uid": "src/components/sections/BigNumbers.tsx:64:17",
 									"data-prohibitions": "[editContent]",
 									src: "https://img.usecurling.com/p/800/1000?q=confident%20smiling%20business%20person&dpr=2",
 									alt: "Profissional da área financeira",
 									className: "absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									"data-uid": "src/components/sections/BigNumbers.tsx:68:17",
+									"data-uid": "src/components/sections/BigNumbers.tsx:69:17",
 									"data-prohibitions": "[]",
 									className: "absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"
 								})]
@@ -25201,85 +25223,59 @@ function BigNumbers() {
 						})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/sections/BigNumbers.tsx:74:11",
+						"data-uid": "src/components/sections/BigNumbers.tsx:75:11",
 						"data-prohibitions": "[editContent]",
 						className: "lg:col-span-4 flex flex-col",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/BigNumbers.tsx:75:13",
+							"data-uid": "src/components/sections/BigNumbers.tsx:76:13",
 							"data-prohibitions": "[editContent]",
 							delay: 500,
 							className: "flex-1 flex flex-col",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/BigNumbers.tsx:76:15",
+								"data-uid": "src/components/sections/BigNumbers.tsx:77:15",
 								"data-prohibitions": "[editContent]",
 								className: "flex-1 w-full bg-brand-dark text-white rounded-[2rem] p-8 md:p-10 flex flex-col items-center justify-between text-center relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-xl",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:78:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:79:17",
 										"data-prohibitions": "[]",
 										className: "absolute top-0 right-0 w-64 h-64 bg-brand-red/20 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:79:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:80:17",
 										"data-prohibitions": "[]",
 										className: "absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full blur-2xl -ml-24 -mb-24 pointer-events-none"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:81:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:82:17",
 										"data-prohibitions": "[]",
 										className: "pt-8 relative z-10",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-											"data-uid": "src/components/sections/BigNumbers.tsx:82:19",
+											"data-uid": "src/components/sections/BigNumbers.tsx:83:19",
 											"data-prohibitions": "[]",
 											className: "text-4xl sm:text-5xl lg:text-4xl xl:text-5xl font-extrabold mb-3 tracking-tight text-white",
 											children: "+8.000"
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											"data-uid": "src/components/sections/BigNumbers.tsx:85:19",
+											"data-uid": "src/components/sections/BigNumbers.tsx:86:19",
 											"data-prohibitions": "[]",
 											className: "text-white/80 text-lg font-sans",
 											children: "sacados negociados"
 										})]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										"data-uid": "src/components/sections/BigNumbers.tsx:88:17",
+										"data-uid": "src/components/sections/BigNumbers.tsx:89:17",
 										"data-prohibitions": "[editContent]",
 										className: "mt-16 mb-8 relative w-full flex justify-center z-10",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/sections/BigNumbers.tsx:90:19",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+											"data-uid": "src/components/sections/BigNumbers.tsx:91:19",
 											"data-prohibitions": "[]",
-											className: "w-56 h-36 bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-xl shadow-2xl transform rotate-[-12deg] group-hover:rotate-[-5deg] group-hover:scale-105 transition-all duration-500 border border-white/20 p-5 flex flex-col justify-between backdrop-blur-sm",
-											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												"data-uid": "src/components/sections/BigNumbers.tsx:91:21",
-												"data-prohibitions": "[]",
-												className: "flex justify-between items-start",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													"data-uid": "src/components/sections/BigNumbers.tsx:92:23",
-													"data-prohibitions": "[]",
-													className: "w-10 h-7 bg-white/20 rounded-md backdrop-blur-md"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													"data-uid": "src/components/sections/BigNumbers.tsx:93:23",
-													"data-prohibitions": "[]",
-													className: "w-8 h-8 rounded-full bg-white/10 flex items-center justify-center",
-													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-														"data-uid": "src/components/sections/BigNumbers.tsx:94:25",
-														"data-prohibitions": "[]",
-														className: "w-4 h-4 rounded-full bg-white/30"
-													})
-												})]
-											}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-												"data-uid": "src/components/sections/BigNumbers.tsx:97:21",
-												"data-prohibitions": "[]",
-												className: "space-y-3",
-												children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													"data-uid": "src/components/sections/BigNumbers.tsx:98:23",
-													"data-prohibitions": "[]",
-													className: "w-full h-2 bg-white/20 rounded-full"
-												}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													"data-uid": "src/components/sections/BigNumbers.tsx:99:23",
-													"data-prohibitions": "[]",
-													className: "w-2/3 h-2 bg-white/20 rounded-full"
-												})]
-											})]
+											className: "w-56 h-36 bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-xl shadow-2xl transform rotate-[-12deg] group-hover:rotate-[-5deg] group-hover:scale-105 transition-all duration-500 border border-white/20 p-5 flex items-center justify-center backdrop-blur-sm",
+											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Barcode, {
+												"data-uid": "src/components/sections/BigNumbers.tsx:92:21",
+												"data-prohibitions": "[editContent]",
+												className: "w-20 h-20 text-white/90",
+												strokeWidth: 1.5
+											})
 										})
 									})
 								]
@@ -33180,4 +33176,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-CXB4ILU8.js.map
+//# sourceMappingURL=index-CqKAWUrc.js.map
