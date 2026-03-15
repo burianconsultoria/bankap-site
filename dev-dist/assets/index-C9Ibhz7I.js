@@ -24571,7 +24571,7 @@ function Hero() {
 									"data-uid": "src/components/sections/Hero.tsx:109:17",
 									"data-prohibitions": "[]",
 									className: "text-brand-dark font-bold",
-									children: "+150 empresas"
+									children: "+1.700 empresas"
 								}), " com caixa saudável e em crescimento constante."]
 							})]
 						})
@@ -33055,4 +33055,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-2RhsNMjp.js.map
+//# sourceMappingURL=index-C9Ibhz7I.js.map

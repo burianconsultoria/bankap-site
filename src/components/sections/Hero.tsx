@@ -106,8 +106,8 @@ export function Hero() {
                 </div>
               </div>
               <p className="text-sm text-brand-gray font-medium leading-relaxed font-sans">
-                <span className="text-brand-dark font-bold">+150 empresas</span> com caixa saudável
-                e em crescimento constante.
+                <span className="text-brand-dark font-bold">+1.700 empresas</span> com caixa
+                saudável e em crescimento constante.
               </p>
             </div>
           </div>
