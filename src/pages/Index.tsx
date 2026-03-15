@@ -6,6 +6,7 @@ import { Differentiators } from '@/components/sections/Differentiators'
 import { TargetAudience } from '@/components/sections/TargetAudience'
 import { Benefits } from '@/components/sections/Benefits'
 import { FinalCTA } from '@/components/sections/FinalCTA'
+import { LeadCaptureModal } from '@/components/LeadCaptureModal'
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <TargetAudience />
       <Benefits />
       <FinalCTA />
+      <LeadCaptureModal />
     </div>
   )
 }

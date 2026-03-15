@@ -56,9 +56,10 @@ export function LeadCaptureModal() {
     <Dialog open={isOpen} onOpenChange={(open) => !open && closeModal()}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-brand-dark">
+          <DialogTitle className="sr-only">Solicitar Antecipação</DialogTitle>
+          <div className="text-2xl font-bold text-brand-dark" aria-hidden="true">
             Comece a antecipar
-          </DialogTitle>
+          </div>
           <DialogDescription className="text-brand-gray">
             Preencha seus dados para conversarmos sobre como destravar o caixa da sua empresa.
           </DialogDescription>
