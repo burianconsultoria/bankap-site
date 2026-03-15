@@ -1,5 +1,4 @@
 import { Reveal } from '@/components/ui/Reveal'
-import { Barcode } from 'lucide-react'
 
 export function BigNumbers() {
   return (
@@ -86,10 +85,84 @@ export function BigNumbers() {
                   <p className="text-white/80 text-lg font-sans">sacados negociados</p>
                 </div>
 
-                <div className="mt-16 mb-8 relative w-full flex justify-center z-10">
+                <div className="mt-12 sm:mt-16 mb-8 relative w-full flex justify-center z-10">
                   {/* Boleto representation card */}
-                  <div className="w-56 h-36 bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-xl shadow-2xl transform rotate-[-12deg] group-hover:rotate-[-5deg] group-hover:scale-105 transition-all duration-500 border border-white/20 p-5 flex items-center justify-center backdrop-blur-sm">
-                    <Barcode className="w-20 h-20 text-white/90" strokeWidth={1.5} />
+                  <div className="w-64 sm:w-72 bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-2xl shadow-2xl transform rotate-[-12deg] group-hover:rotate-[-5deg] group-hover:scale-105 transition-all duration-500 border border-white/20 p-4 sm:p-5 flex flex-col justify-between backdrop-blur-sm relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
+
+                    {/* Header */}
+                    <div className="flex items-end justify-between border-b border-white/20 pb-2 mb-3 relative z-10">
+                      <div className="flex items-center gap-2">
+                        <div className="text-lg sm:text-xl font-extrabold italic tracking-tighter text-white">
+                          Bankap
+                        </div>
+                        <div className="h-4 sm:h-5 border-l-2 border-white/30"></div>
+                        <div className="text-[10px] sm:text-xs font-mono text-white/90 tracking-widest hidden sm:block">
+                          34191.09008
+                        </div>
+                      </div>
+                      <div className="text-[10px] font-mono text-white/90 tracking-widest sm:hidden">
+                        34191.09
+                      </div>
+                    </div>
+
+                    {/* Body */}
+                    <div className="flex gap-4 mb-4 pt-1 relative z-10">
+                      <div className="flex-1 space-y-2 sm:space-y-3">
+                        <div className="h-1.5 sm:h-2 w-full bg-white/30 rounded-full"></div>
+                        <div className="h-1.5 sm:h-2 w-3/4 bg-white/30 rounded-full"></div>
+                        <div className="h-1.5 sm:h-2 w-1/2 bg-white/30 rounded-full"></div>
+                      </div>
+                      <div className="w-16 sm:w-20 h-8 sm:h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center text-[10px] sm:text-xs font-bold text-white border border-white/20 shadow-inner shrink-0">
+                        R$ ---
+                      </div>
+                    </div>
+
+                    {/* Barcode */}
+                    <div className="w-full relative z-10">
+                      <svg
+                        viewBox="0 0 100 20"
+                        className="w-full h-8 sm:h-10 fill-current text-white/90 drop-shadow-sm"
+                        preserveAspectRatio="none"
+                      >
+                        {[
+                          [0, 2],
+                          [3, 1],
+                          [5, 3],
+                          [9, 1],
+                          [11, 2],
+                          [15, 4],
+                          [20, 1],
+                          [22, 2],
+                          [26, 1],
+                          [29, 3],
+                          [33, 1],
+                          [35, 2],
+                          [38, 4],
+                          [43, 1],
+                          [45, 2],
+                          [48, 1],
+                          [51, 3],
+                          [55, 1],
+                          [58, 2],
+                          [62, 1],
+                          [64, 4],
+                          [69, 1],
+                          [71, 2],
+                          [74, 1],
+                          [76, 3],
+                          [80, 2],
+                          [84, 1],
+                          [86, 4],
+                          [91, 1],
+                          [94, 2],
+                          [97, 1],
+                          [99, 1],
+                        ].map(([x, w], i) => (
+                          <rect key={i} x={x} y="0" width={w} height="20" />
+                        ))}
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
