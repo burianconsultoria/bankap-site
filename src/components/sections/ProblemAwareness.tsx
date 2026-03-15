@@ -1,91 +1,105 @@
 import { Reveal } from '@/components/ui/Reveal'
-import { Layers, Users, TrendingDown } from 'lucide-react'
-
-const PROBLEMS = [
-  {
-    icon: Layers,
-    title: 'DESORGANIZAÇÃO CUSTOSA',
-    description:
-      'Ativos espalhados em diversas instituições dificultam a visão global e impedem a otimização tributária e de rentabilidade.',
-  },
-  {
-    icon: Users,
-    title: 'CONFLITO DE INTERESSES',
-    description:
-      'Conselhos genéricos de gerentes de banco geralmente atendem às metas da instituição, não aos seus objetivos de vida.',
-  },
-  {
-    icon: TrendingDown,
-    title: 'RISCO SILENCIOSO',
-    description:
-      'Investir sem alinhar prazos e riscos ao seu momento de vida pode expor seu patrimônio a perdas desnecessárias.',
-  },
-]
+import { Clock, TrendingUp, ShieldCheck } from 'lucide-react'
 
 export function ProblemAwareness() {
   return (
-    <section className="py-20 lg:py-32 bg-white">
+    <section className="py-20 lg:py-32 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Column - Content */}
-          <div>
-            <Reveal>
-              <div className="flex items-center gap-4 mb-8">
-                <span className="text-[10px] md:text-xs font-bold text-blue-700 border border-blue-200 px-4 py-1.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-                  O Problema Real
-                </span>
-                <div className="flex-1 h-px bg-blue-100 relative max-w-[200px]">
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1 h-1 bg-blue-700 rounded-sm"></div>
-                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-1 bg-blue-700 rounded-sm"></div>
+        {/* Header Section consolidating both concepts */}
+        <div className="text-center max-w-4xl mx-auto mb-16 lg:mb-24">
+          <Reveal>
+            <h2 className="text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans">
+              O seu dinheiro não pode ficar <span className="text-brand-red">preso no prazo</span>
+            </h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="text-xl md:text-2xl text-brand-gray font-light leading-relaxed font-sans">
+              Mais controle, menos improviso. Assuma as rédeas do seu fluxo de caixa e pare de
+              financiar os prazos dos seus clientes com o capital de giro da sua empresa.
+            </p>
+          </Reveal>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Column - Image */}
+          <Reveal delay={200} className="order-2 lg:order-1 h-full">
+            <div className="relative h-full min-h-[450px] lg:min-h-[600px] rounded-[2rem] overflow-hidden shadow-2xl group">
+              <img
+                src="https://img.usecurling.com/p/800/1000?q=business%20liquidity%20growth&dpr=2"
+                alt="Controle Financeiro e Liquidez"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/30 to-transparent"></div>
+
+              <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white transform translate-y-0 transition-transform duration-500">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-brand-red flex items-center justify-center shrink-0">
+                      <ShieldCheck className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-bold text-xl font-sans leading-tight">
+                      Mais controle,
+                      <br />
+                      menos improviso
+                    </h3>
+                  </div>
+                  <p className="text-white/90 text-sm md:text-base leading-relaxed font-sans">
+                    Tenha certeza de que as obrigações do mês serão pagas sem precisar recorrer a
+                    linhas de crédito emergenciais ou estressar sua operação.
+                  </p>
                 </div>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Right Column - Features */}
+          <div className="order-1 lg:order-2 flex flex-col gap-6">
+            <Reveal delay={300}>
+              <div className="p-8 rounded-3xl bg-brand-light border border-gray-100 hover:border-brand-red/20 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 group">
+                <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-colors duration-300">
+                  <Clock className="w-7 h-7" />
+                </div>
+                <h3 className="text-2xl font-bold text-brand-dark mb-4 font-sans">
+                  O fim da espera
+                </h3>
+                <p className="text-brand-gray text-lg leading-relaxed font-sans">
+                  Vender a prazo é o que atrai clientes, mas receber à vista é o que mantém a sua
+                  empresa forte. Antecipe e transforme suas vendas futuras em saldo na conta hoje.
+                </p>
               </div>
             </Reveal>
 
-            <Reveal delay={100}>
-              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-[1.15] tracking-tight font-display">
-                Seu patrimônio merece mais do que improviso
-              </h2>
+            <Reveal delay={400}>
+              <div className="p-8 rounded-3xl bg-brand-light border border-gray-100 hover:border-brand-red/20 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 group">
+                <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-colors duration-300">
+                  <TrendingUp className="w-7 h-7" />
+                </div>
+                <h3 className="text-2xl font-bold text-brand-dark mb-4 font-sans">
+                  Poder de negociação
+                </h3>
+                <p className="text-brand-gray text-lg leading-relaxed font-sans">
+                  Com dinheiro no caixa, você paga fornecedores à vista, garante descontos
+                  substanciais e melhora sua margem de lucro de forma inteligente e planejada.
+                </p>
+              </div>
             </Reveal>
 
-            <Reveal delay={200}>
-              <p className="text-lg text-slate-500 mb-10 leading-relaxed max-w-xl">
-                Sem um plano estratégico e acompanhamento real, o risco de perder dinheiro ou
-                oportunidades crescem, e a tranquilidade financeira fica cada vez mais distante.
-              </p>
-            </Reveal>
+            <Reveal delay={500}>
+              <div className="p-8 rounded-3xl bg-brand-dark text-white shadow-xl hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+                {/* Decorative glow */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/20 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
 
-            <div className="flex flex-col gap-4">
-              {PROBLEMS.map((problem, index) => (
-                <Reveal key={index} delay={300 + index * 100}>
-                  <div className="flex gap-5 bg-slate-50/70 hover:bg-slate-50 p-6 rounded-2xl transition-all duration-300 border border-transparent hover:border-slate-100 group">
-                    <div className="bg-white rounded-xl p-3 shadow-sm h-fit shrink-0 group-hover:shadow-md transition-shadow">
-                      <problem.icon className="w-6 h-6 text-blue-600" strokeWidth={1.5} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900 mb-2 text-sm uppercase tracking-wide">
-                        {problem.title}
-                      </h4>
-                      <p className="text-slate-500 text-sm leading-relaxed">
-                        {problem.description}
-                      </p>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 font-sans relative z-10">
+                  <div className="w-2.5 h-2.5 rounded-full bg-brand-red animate-pulse shrink-0" />
+                  Fluxo de caixa contínuo
+                </h3>
+                <p className="text-gray-300 text-lg leading-relaxed font-sans relative z-10">
+                  Opere sua empresa sem sobressaltos. O que foi faturado já pode ser utilizado para
+                  girar a operação, pagar impostos e expandir sua estrutura sem travas.
+                </p>
+              </div>
+            </Reveal>
           </div>
-
-          {/* Right Column - Image */}
-          <Reveal delay={400} className="h-full">
-            <div className="relative h-full min-h-[500px] lg:min-h-[700px] rounded-3xl overflow-hidden shadow-2xl group">
-              <img
-                src="https://img.usecurling.com/p/800/1000?q=worried%20couple%20finances&color=blue&dpr=2"
-                alt="Casal preocupado analisando documentos financeiros"
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-60"></div>
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>
