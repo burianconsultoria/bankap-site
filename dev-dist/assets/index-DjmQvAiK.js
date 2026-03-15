@@ -32315,13 +32315,13 @@ var NotFound = () => {
 	});
 };
 //#endregion
-//#region src/assets/af_bankap-07-471dc.png
-var af_bankap_07_471dc_default = "/assets/af_bankap-07-471dc-Dgku0Cuv.png";
+//#region src/assets/design-sem-nome-9-d553a.png
+var design_sem_nome_9_d553a_default = "/assets/design-sem-nome-9-d553a-bfuEFW2X.png";
 //#endregion
 //#region src/components/Header.tsx
 function Header() {
 	const [isScrolled, setIsScrolled] = (0, import_react.useState)(false);
-	const [isMobileMenuOpen, setIsMobileMenuOpen] = (0, import_react.useState)(false);
+	const [mobileMenuOpen, setMobileMenuOpen] = (0, import_react.useState)(false);
 	const { openModal } = useModal();
 	(0, import_react.useEffect)(() => {
 		const handleScroll = () => {
@@ -32332,110 +32332,108 @@ function Header() {
 	}, []);
 	const navLinks = [
 		{
+			name: "Problema",
+			href: "#problema"
+		},
+		{
+			name: "Solução",
+			href: "#solucao"
+		},
+		{
+			name: "Benefícios",
+			href: "#beneficios"
+		},
+		{
 			name: "Como Funciona",
-			href: "#how-it-works"
-		},
-		{
-			name: "Vantagens",
-			href: "#benefits"
-		},
-		{
-			name: "Diferenciais",
-			href: "#differentiators"
+			href: "#como-funciona"
 		}
 	];
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
-		"data-uid": "src/components/Header.tsx:27:5",
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
+		"data-uid": "src/components/Header.tsx:30:5",
 		"data-prohibitions": "[editContent]",
-		className: `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`,
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			"data-uid": "src/components/Header.tsx:32:7",
+		className: "fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-6 lg:px-8 transition-all duration-300 pointer-events-none",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			"data-uid": "src/components/Header.tsx:31:7",
 			"data-prohibitions": "[editContent]",
-			className: "container mx-auto px-4 md:px-6",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/Header.tsx:34:9",
-				"data-prohibitions": "[editContent]",
-				className: "flex items-center justify-between bg-white rounded-full px-6 py-3 shadow-sm border border-gray-100",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						"data-uid": "src/components/Header.tsx:35:11",
-						"data-prohibitions": "[]",
-						href: "#",
-						className: "flex-shrink-0 flex items-center",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							"data-uid": "src/components/Header.tsx:36:13",
-							"data-prohibitions": "[editContent]",
-							src: af_bankap_07_471dc_default,
-							alt: "Bankap",
-							className: "h-8 md:h-9 w-auto object-contain"
-						})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+			className: cn$1("max-w-5xl mx-auto rounded-full transition-all duration-300 flex items-center justify-between px-6 py-3 pointer-events-auto", isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg border border-slate-200/50" : "bg-white/90 backdrop-blur-sm shadow border border-slate-100"),
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					"data-uid": "src/components/Header.tsx:39:9",
+					"data-prohibitions": "[]",
+					to: "/",
+					className: "flex-shrink-0 z-50",
+					onClick: () => setMobileMenuOpen(false),
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 						"data-uid": "src/components/Header.tsx:40:11",
 						"data-prohibitions": "[editContent]",
-						className: "hidden md:flex items-center gap-8",
-						children: navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							"data-uid": "src/components/Header.tsx:42:15",
-							"data-prohibitions": "[editContent]",
-							href: link.href,
-							className: "text-sm font-medium text-gray-600 hover:text-primary transition-colors font-sans",
-							children: link.name
-						}, link.name))
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/Header.tsx:52:11",
-						"data-prohibitions": "[]",
-						className: "hidden md:flex items-center",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-							"data-uid": "src/components/Header.tsx:53:13",
-							"data-prohibitions": "[]",
-							onClick: openModal,
-							className: "bg-primary hover:bg-primary/90 text-white rounded-full px-6",
-							children: "Antecipe Agora"
-						})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-						"data-uid": "src/components/Header.tsx:62:11",
-						"data-prohibitions": "[editContent]",
-						className: "md:hidden text-gray-600 p-2 focus:outline-none",
-						onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
-						"aria-label": "Toggle menu",
-						children: isMobileMenuOpen ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {
-							"data-uid": "src/components/Header.tsx:67:33",
-							"data-prohibitions": "[editContent]",
-							size: 24
-						}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
-							"data-uid": "src/components/Header.tsx:67:51",
-							"data-prohibitions": "[editContent]",
-							size: 24
-						})
+						src: design_sem_nome_9_d553a_default,
+						alt: "Bankap Banco",
+						className: "h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105"
 					})
-				]
-			})
-		}), isMobileMenuOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/Header.tsx:74:9",
-			"data-prohibitions": "[editContent]",
-			className: "md:hidden absolute top-full left-4 right-4 mt-2 bg-white rounded-2xl shadow-lg border border-gray-100 p-4 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-200",
-			children: [navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-				"data-uid": "src/components/Header.tsx:76:13",
-				"data-prohibitions": "[editContent]",
-				href: link.href,
-				className: "text-base font-medium text-gray-800 p-2 hover:bg-gray-50 rounded-lg transition-colors",
-				onClick: () => setIsMobileMenuOpen(false),
-				children: link.name
-			}, link.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-				"data-uid": "src/components/Header.tsx:85:11",
-				"data-prohibitions": "[]",
-				onClick: () => {
-					openModal();
-					setIsMobileMenuOpen(false);
-				},
-				className: "w-full bg-primary hover:bg-primary/90 text-white rounded-full mt-2 py-6 text-base",
-				children: "Antecipe Agora"
-			})]
-		})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+					"data-uid": "src/components/Header.tsx:48:9",
+					"data-prohibitions": "[editContent]",
+					className: "hidden md:flex items-center space-x-8",
+					children: [navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						"data-uid": "src/components/Header.tsx:50:13",
+						"data-prohibitions": "[editContent]",
+						href: link.href,
+						className: "text-sm font-semibold text-slate-700 hover:text-[#d60d37] transition-colors",
+						children: link.name
+					}, link.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+						"data-uid": "src/components/Header.tsx:58:11",
+						"data-prohibitions": "[]",
+						onClick: openModal,
+						className: "bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 transition-opacity text-white rounded-full px-6 font-semibold",
+						children: "Fale com Especialista"
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					"data-uid": "src/components/Header.tsx:67:9",
+					"data-prohibitions": "[editContent]",
+					className: "md:hidden z-50 p-2 text-slate-700 hover:text-[#d60d37] transition-colors",
+					onClick: () => setMobileMenuOpen(!mobileMenuOpen),
+					"aria-label": "Toggle menu",
+					children: mobileMenuOpen ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {
+						"data-uid": "src/components/Header.tsx:72:29",
+						"data-prohibitions": "[editContent]",
+						size: 28
+					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
+						"data-uid": "src/components/Header.tsx:72:47",
+						"data-prohibitions": "[editContent]",
+						size: 28
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/Header.tsx:76:9",
+					"data-prohibitions": "[editContent]",
+					className: cn$1("fixed inset-0 bg-white/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-300 ease-in-out md:hidden", mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"),
+					children: [navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						"data-uid": "src/components/Header.tsx:83:13",
+						"data-prohibitions": "[editContent]",
+						href: link.href,
+						className: "text-2xl font-bold text-slate-800 hover:text-[#d60d37] transition-colors",
+						onClick: () => setMobileMenuOpen(false),
+						children: link.name
+					}, link.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+						"data-uid": "src/components/Header.tsx:92:11",
+						"data-prohibitions": "[]",
+						onClick: () => {
+							setMobileMenuOpen(false);
+							openModal();
+						},
+						className: "bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full px-10 py-6 text-lg font-bold mt-4 shadow-lg",
+						children: "Fale com Especialista"
+					})]
+				})
+			]
+		})
 	});
 }
+//#endregion
+//#region src/assets/af_bankap-07-471dc.png
+var af_bankap_07_471dc_default = "/assets/af_bankap-07-471dc-Dgku0Cuv.png";
 //#endregion
 //#region src/components/Footer.tsx
 function Footer() {
@@ -32811,4 +32809,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-D40VssI1.js.map
+//# sourceMappingURL=index-DjmQvAiK.js.map

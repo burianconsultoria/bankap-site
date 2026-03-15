@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { useModal } from '@/contexts/ModalContext'
-import logoPositive from '@/assets/af_bankap-07-471dc.png'
+import { cn } from '@/lib/utils'
+import logoPositive from '@/assets/design-sem-nome-9-d553a.png'
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { openModal } = useModal()
 
   useEffect(() => {
@@ -18,81 +20,86 @@ export function Header() {
   }, [])
 
   const navLinks = [
-    { name: 'Como Funciona', href: '#how-it-works' },
-    { name: 'Vantagens', href: '#benefits' },
-    { name: 'Diferenciais', href: '#differentiators' },
+    { name: 'Problema', href: '#problema' },
+    { name: 'Solução', href: '#solucao' },
+    { name: 'Benefícios', href: '#beneficios' },
+    { name: 'Como Funciona', href: '#como-funciona' },
   ]
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
-      }`}
-    >
-      <div className="container mx-auto px-4 md:px-6">
-        {/* Pill-shaped navigation container */}
-        <div className="flex items-center justify-between bg-white rounded-full px-6 py-3 shadow-sm border border-gray-100">
-          <a href="#" className="flex-shrink-0 flex items-center">
-            <img src={logoPositive} alt="Bankap" className="h-8 md:h-9 w-auto object-contain" />
-          </a>
+    <header className="fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-6 lg:px-8 transition-all duration-300 pointer-events-none">
+      <div
+        className={cn(
+          'max-w-5xl mx-auto rounded-full transition-all duration-300 flex items-center justify-between px-6 py-3 pointer-events-auto',
+          isScrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-lg border border-slate-200/50'
+            : 'bg-white/90 backdrop-blur-sm shadow border border-slate-100',
+        )}
+      >
+        <Link to="/" className="flex-shrink-0 z-50" onClick={() => setMobileMenuOpen(false)}>
+          <img
+            src={logoPositive}
+            alt="Bankap Banco"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105"
+          />
+        </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-primary transition-colors font-sans"
-              >
-                {link.name}
-              </a>
-            ))}
-          </nav>
-
-          <div className="hidden md:flex items-center">
-            <Button
-              onClick={openModal}
-              className="bg-primary hover:bg-primary/90 text-white rounded-full px-6"
-            >
-              Antecipe Agora
-            </Button>
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <button
-            className="md:hidden text-gray-600 p-2 focus:outline-none"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu Dropdown */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-white rounded-2xl shadow-lg border border-gray-100 p-4 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-200">
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-base font-medium text-gray-800 p-2 hover:bg-gray-50 rounded-lg transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-sm font-semibold text-slate-700 hover:text-[#d60d37] transition-colors"
+            >
+              {link.name}
+            </a>
+          ))}
+          <Button
+            onClick={openModal}
+            className="bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 transition-opacity text-white rounded-full px-6 font-semibold"
+          >
+            Fale com Especialista
+          </Button>
+        </nav>
+
+        {/* Mobile menu button */}
+        <button
+          className="md:hidden z-50 p-2 text-slate-700 hover:text-[#d60d37] transition-colors"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Mobile Nav */}
+        <div
+          className={cn(
+            'fixed inset-0 bg-white/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-300 ease-in-out md:hidden',
+            mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible',
+          )}
+        >
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-2xl font-bold text-slate-800 hover:text-[#d60d37] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
           <Button
             onClick={() => {
+              setMobileMenuOpen(false)
               openModal()
-              setIsMobileMenuOpen(false)
             }}
-            className="w-full bg-primary hover:bg-primary/90 text-white rounded-full mt-2 py-6 text-base"
+            className="bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full px-10 py-6 text-lg font-bold mt-4 shadow-lg"
           >
-            Antecipe Agora
+            Fale com Especialista
           </Button>
         </div>
-      )}
+      </div>
     </header>
   )
 }
