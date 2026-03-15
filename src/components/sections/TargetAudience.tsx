@@ -7,7 +7,7 @@ export function TargetAudience() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <Reveal>
-            <h2 className="text-3xl md:text-[40px] font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans">
               Para quem a Bankap faz mais sentido
             </h2>
           </Reveal>

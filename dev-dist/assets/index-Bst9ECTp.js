@@ -24781,7 +24781,7 @@ function HowItWorks() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 						"data-uid": "src/components/sections/HowItWorks.tsx:32:13",
 						"data-prohibitions": "[]",
-						className: "text-3xl md:text-[40px] font-bold text-brand-dark mb-6",
+						className: "text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans",
 						children: "Como funciona a antecipação de recebíveis na Bankap"
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
@@ -24886,7 +24886,7 @@ function Differentiators() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 						"data-uid": "src/components/sections/Differentiators.tsx:32:13",
 						"data-prohibitions": "[]",
-						className: "text-3xl md:text-[40px] font-bold text-brand-dark mb-6 leading-tight",
+						className: "text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans",
 						children: "Por que a Bankap é diferente de banco tradicional e factoring \"raiz\""
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
@@ -24965,7 +24965,7 @@ function TargetAudience() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 						"data-uid": "src/components/sections/TargetAudience.tsx:10:13",
 						"data-prohibitions": "[]",
-						className: "text-3xl md:text-[40px] font-bold text-brand-dark mb-6",
+						className: "text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans",
 						children: "Para quem a Bankap faz mais sentido"
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
@@ -32939,4 +32939,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-BE4C8dL9.js.map
+//# sourceMappingURL=index-Bst9ECTp.js.map

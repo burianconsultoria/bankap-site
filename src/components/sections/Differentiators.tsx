@@ -29,7 +29,7 @@ export function Differentiators() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mb-16">
           <Reveal>
-            <h2 className="text-3xl md:text-[40px] font-bold text-brand-dark mb-6 leading-tight">
+            <h2 className="text-3xl md:text-5xl lg:text-[56px] font-extrabold text-brand-dark mb-6 leading-[1.1] tracking-tight font-sans">
               Por que a Bankap é diferente de banco tradicional e factoring "raiz"
             </h2>
           </Reveal>
