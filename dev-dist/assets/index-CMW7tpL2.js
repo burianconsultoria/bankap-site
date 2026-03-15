@@ -24320,7 +24320,7 @@ function Hero() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		"data-uid": "src/components/sections/Hero.tsx:11:5",
 		"data-prohibitions": "[editContent]",
-		className: "relative min-h-screen pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden flex items-center bg-gray-50",
+		className: "relative min-h-screen pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden flex items-center bg-gray-50",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			"data-uid": "src/components/sections/Hero.tsx:12:7",
 			"data-prohibitions": "[editContent]",
@@ -24358,7 +24358,7 @@ function Hero() {
 										"data-prohibitions": "[editContent]",
 										src: af_bankap_06_16d0d_default,
 										alt: "Bankap",
-										className: "h-10 md:h-12 w-auto object-contain mb-10"
+										className: "h-12 md:h-14 w-auto object-contain mb-10"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 										"data-uid": "src/components/sections/Hero.tsx:28:17",
@@ -32277,43 +32277,45 @@ var Index = () => {
 };
 //#endregion
 //#region src/pages/NotFound.tsx
-var NotFound = () => {
-	const location = useLocation();
-	(0, import_react.useEffect)(() => {
-		console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-	}, [location.pathname]);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		"data-uid": "src/pages/NotFound.tsx:13:5",
+function NotFound() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		"data-uid": "src/pages/NotFound.tsx:6:5",
 		"data-prohibitions": "[]",
-		className: "min-h-screen flex items-center justify-center bg-gray-100",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/pages/NotFound.tsx:14:7",
-			"data-prohibitions": "[]",
-			className: "text-center",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-					"data-uid": "src/pages/NotFound.tsx:15:9",
-					"data-prohibitions": "[]",
-					className: "text-4xl font-bold mb-4",
-					children: "404"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+		className: "flex flex-col items-center justify-center min-h-screen pt-32 pb-16 px-4 text-center bg-gray-50",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				"data-uid": "src/pages/NotFound.tsx:7:7",
+				"data-prohibitions": "[]",
+				className: "text-6xl font-bold text-gray-900 mb-4",
+				children: "404"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+				"data-uid": "src/pages/NotFound.tsx:8:7",
+				"data-prohibitions": "[]",
+				className: "text-2xl font-semibold text-gray-700 mb-6",
+				children: "Página não encontrada"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				"data-uid": "src/pages/NotFound.tsx:9:7",
+				"data-prohibitions": "[]",
+				className: "text-gray-500 mb-8 max-w-md",
+				children: "A página que você está procurando não existe ou foi movida."
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+				"data-uid": "src/pages/NotFound.tsx:12:7",
+				"data-prohibitions": "[]",
+				asChild: true,
+				className: "bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full px-8",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 					"data-uid": "src/pages/NotFound.tsx:16:9",
 					"data-prohibitions": "[]",
-					className: "text-xl text-gray-600 mb-4",
-					children: "Oops! Page not found"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-					"data-uid": "src/pages/NotFound.tsx:17:9",
-					"data-prohibitions": "[]",
-					href: "/",
-					className: "text-blue-500 hover:text-blue-700 underline",
-					children: "Return to Home"
+					to: "/",
+					children: "Voltar para a Home"
 				})
-			]
-		})
+			})
+		]
 	});
-};
+}
 //#endregion
 //#region src/assets/design-sem-nome-9-d553a.png
 var design_sem_nome_9_d553a_default = "/assets/design-sem-nome-9-d553a-bfuEFW2X.png";
@@ -32368,7 +32370,7 @@ function Header() {
 						"data-prohibitions": "[editContent]",
 						src: design_sem_nome_9_d553a_default,
 						alt: "Bankap Banco",
-						className: "h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105"
+						className: "h-12 sm:h-14 w-auto object-contain transition-transform hover:scale-105"
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
@@ -32432,9 +32434,6 @@ function Header() {
 	});
 }
 //#endregion
-//#region src/assets/af_bankap-07-471dc.png
-var af_bankap_07_471dc_default = "/assets/af_bankap-07-471dc-Dgku0Cuv.png";
-//#endregion
 //#region src/components/Footer.tsx
 function Footer() {
 	const currentYear = (/* @__PURE__ */ new Date()).getFullYear();
@@ -32458,9 +32457,9 @@ function Footer() {
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							"data-uid": "src/components/Footer.tsx:13:13",
 							"data-prohibitions": "[editContent]",
-							src: af_bankap_07_471dc_default,
+							src: design_sem_nome_9_d553a_default,
 							alt: "Bankap",
-							className: "h-10 md:h-12 w-auto object-contain mb-6"
+							className: "h-12 md:h-14 w-auto object-contain mb-6"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							"data-uid": "src/components/Footer.tsx:18:13",
 							"data-prohibitions": "[]",
@@ -32727,7 +32726,7 @@ function Layout() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
 				"data-uid": "src/components/Layout.tsx:10:7",
 				"data-prohibitions": "[]",
-				className: "flex-grow pt-[104px]",
+				className: "flex-grow",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {
 					"data-uid": "src/components/Layout.tsx:11:9",
 					"data-prohibitions": "[editContent]"
@@ -32809,4 +32808,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-DjmQvAiK.js.map
+//# sourceMappingURL=index-CMW7tpL2.js.map

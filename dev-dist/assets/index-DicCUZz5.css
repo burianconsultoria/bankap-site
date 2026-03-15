@@ -892,6 +892,10 @@ section[aria-label='Notifications alt+T'] {
   margin-bottom: 1.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-1{
   margin-left: 0.25rem;
 }
@@ -1307,6 +1311,10 @@ section[aria-label='Notifications alt+T'] {
 .max-w-max{
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-md{
+  max-width: 28rem;
 }
 
 .max-w-sm{
@@ -2141,6 +2149,10 @@ section[aria-label='Notifications alt+T'] {
   padding-top: 5rem;
 }
 
+.pt-28{
+  padding-top: 7rem;
+}
+
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -2155,10 +2167,6 @@ section[aria-label='Notifications alt+T'] {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-\[104px\]{
-  padding-top: 104px;
 }
 
 .text-left{
@@ -2191,9 +2199,9 @@ section[aria-label='Notifications alt+T'] {
   line-height: 2.25rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-\[0\.8rem\]{
@@ -2270,11 +2278,6 @@ section[aria-label='Notifications alt+T'] {
   color: hsl(var(--accent-foreground));
 }
 
-.text-blue-500{
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-}
-
 .text-brand-dark{
   --tw-text-opacity: 1;
   color: rgb(35 31 32 / var(--tw-text-opacity, 1));
@@ -2334,6 +2337,11 @@ section[aria-label='Notifications alt+T'] {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
@@ -2381,10 +2389,6 @@ section[aria-label='Notifications alt+T'] {
 
 .text-white\/90{
   color: rgb(255 255 255 / 0.9);
-}
-
-.underline{
-  text-decoration-line: underline;
 }
 
 .underline-offset-4{
@@ -2920,11 +2924,6 @@ section[aria-label='Notifications alt+T'] {
 
 .hover\:text-accent-foreground:hover{
   color: hsl(var(--accent-foreground));
-}
-
-.hover\:text-blue-700:hover{
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-foreground:hover{
@@ -3788,8 +3787,8 @@ section[aria-label='Notifications alt+T'] {
     display: flex;
   }
 
-  .sm\:h-12{
-    height: 3rem;
+  .sm\:h-14{
+    height: 3.5rem;
   }
 
   .sm\:w-auto{
@@ -3862,8 +3861,8 @@ section[aria-label='Notifications alt+T'] {
     display: none;
   }
 
-  .md\:h-12{
-    height: 3rem;
+  .md\:h-14{
+    height: 3.5rem;
   }
 
   .md\:h-\[650px\]{
@@ -3911,8 +3910,8 @@ section[aria-label='Notifications alt+T'] {
     padding-bottom: 6rem;
   }
 
-  .md\:pt-40{
-    padding-top: 10rem;
+  .md\:pt-32{
+    padding-top: 8rem;
   }
 
   .md\:text-left{

@@ -40,7 +40,7 @@ export function Header() {
           <img
             src={logoPositive}
             alt="Bankap Banco"
-            className="h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105"
+            className="h-12 sm:h-14 w-auto object-contain transition-transform hover:scale-105"
           />
         </Link>
 

@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
-import logoPositive from '@/assets/af_bankap-07-471dc.png'
+import logoPositive from '@/assets/design-sem-nome-9-d553a.png'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -13,7 +13,7 @@ export function Footer() {
             <img
               src={logoPositive}
               alt="Bankap"
-              className="h-10 md:h-12 w-auto object-contain mb-6"
+              className="h-12 md:h-14 w-auto object-contain mb-6"
             />
             <p className="text-gray-600 text-sm leading-relaxed mb-6 font-sans">
               A Bankap transforma recebíveis em caixa na mão de forma rápida, simples e 100%

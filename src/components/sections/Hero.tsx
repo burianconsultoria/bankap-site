@@ -8,7 +8,7 @@ export function Hero() {
   const { openModal } = useModal()
 
   return (
-    <section className="relative min-h-screen pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden flex items-center bg-gray-50">
+    <section className="relative min-h-screen pt-28 pb-16 md:pt-32 md:pb-24 overflow-hidden flex items-center bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Split Screen Card */}
@@ -22,7 +22,7 @@ export function Hero() {
                 <img
                   src={logoNegative}
                   alt="Bankap"
-                  className="h-10 md:h-12 w-auto object-contain mb-10"
+                  className="h-12 md:h-14 w-auto object-contain mb-10"
                 />
 
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 font-sans">
