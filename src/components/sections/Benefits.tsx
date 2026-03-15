@@ -1,4 +1,4 @@
-import { CheckCircle2, Handshake, Growth } from 'lucide-react'
+import { CheckCircle2, Handshake, TrendingUp } from 'lucide-react'
 import { Reveal } from '@/components/ui/Reveal'
 
 const BENEFITS = [
@@ -15,16 +15,12 @@ const BENEFITS = [
       'Com dinheiro à vista na mão, você ganha poder de compra imediato, consegue melhores descontos e melhora suas condições de estoque.',
   },
   {
-    icon: Growth, // Will use another icon as Growth might not be standard, using TrendingUp instead below
+    icon: TrendingUp,
     title: 'Crescer com previsibilidade',
     description:
       'Mais caixa disponível significa menos dependência do calendário de recebimentos e muito mais autonomia para investir no negócio.',
   },
 ]
-
-// Re-map icon for the 3rd one
-import { TrendingUp as TrendingIcon } from 'lucide-react'
-BENEFITS[2].icon = TrendingIcon
 
 export function Benefits() {
   return (
