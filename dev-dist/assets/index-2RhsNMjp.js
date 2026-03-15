@@ -19028,6 +19028,13 @@ var ArrowRight = createLucideIcon("arrow-right", [["path", {
 	d: "m12 5 7 7-7 7",
 	key: "xquz4c"
 }]]);
+var ArrowUpRight = createLucideIcon("arrow-up-right", [["path", {
+	d: "M7 7h10v10",
+	key: "1tivn9"
+}], ["path", {
+	d: "M7 17 17 7",
+	key: "1vkiza"
+}]]);
 var Building2 = createLucideIcon("building-2", [
 	["path", {
 		d: "M10 12h4",
@@ -19094,6 +19101,28 @@ var Facebook = createLucideIcon("facebook", [["path", {
 	d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
 	key: "1jg4f8"
 }]]);
+var FileText = createLucideIcon("file-text", [
+	["path", {
+		d: "M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z",
+		key: "1oefj6"
+	}],
+	["path", {
+		d: "M14 2v5a1 1 0 0 0 1 1h5",
+		key: "wfsgrz"
+	}],
+	["path", {
+		d: "M10 9H8",
+		key: "b1mrlr"
+	}],
+	["path", {
+		d: "M16 13H8",
+		key: "t4e002"
+	}],
+	["path", {
+		d: "M16 17H8",
+		key: "z1uh3a"
+	}]
+]);
 var Handshake = createLucideIcon("handshake", [
 	["path", {
 		d: "m11 17 2 2a1 1 0 1 0 3-3",
@@ -19178,6 +19207,10 @@ var Menu = createLucideIcon("menu", [
 		key: "1djgab"
 	}]
 ]);
+var MessageCircle = createLucideIcon("message-circle", [["path", {
+	d: "M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719",
+	key: "1sd12s"
+}]]);
 var ShieldCheck = createLucideIcon("shield-check", [["path", {
 	d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
 	key: "oel41y"
@@ -24341,92 +24374,210 @@ function Hero() {
 	const { openModal } = useModal();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		"data-uid": "src/components/sections/Hero.tsx:10:5",
-		"data-prohibitions": "[]",
-		className: "relative bg-brand-light overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		"data-prohibitions": "[editContent]",
+		className: "px-4 pb-20 pt-4 md:pt-6 max-w-[1400px] mx-auto",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			"data-uid": "src/components/sections/Hero.tsx:11:7",
-			"data-prohibitions": "[]",
-			className: "container mx-auto px-4 relative z-10",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/sections/Hero.tsx:12:9",
-				"data-prohibitions": "[]",
-				className: "grid lg:grid-cols-2 gap-12 items-center",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/sections/Hero.tsx:13:11",
-					"data-prohibitions": "[]",
-					className: "max-w-2xl",
+			"data-prohibitions": "[editContent]",
+			className: "grid lg:grid-cols-2 gap-4 lg:gap-6 items-stretch",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+				"data-uid": "src/components/sections/Hero.tsx:13:9",
+				"data-prohibitions": "[editContent]",
+				className: "h-full",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/sections/Hero.tsx:14:11",
+					"data-prohibitions": "[editContent]",
+					className: "bg-gradient-to-br from-[#d60d37] to-[#a20d37] rounded-[32px] md:rounded-[48px] p-8 md:p-12 lg:p-16 flex flex-col justify-between h-full relative overflow-hidden shadow-2xl shadow-brand-red/20",
 					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/Hero.tsx:14:13",
-							"data-prohibitions": "[]",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-								"data-uid": "src/components/sections/Hero.tsx:15:15",
-								"data-prohibitions": "[]",
-								className: "text-4xl md:text-5xl lg:text-[64px] font-bold text-brand-dark leading-[1.1] mb-6 text-balance",
-								children: [
-									"Antecipe seus recebíveis e tenha o caixa na mão —",
-									" ",
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										"data-uid": "src/components/sections/Hero.tsx:17:17",
-										"data-prohibitions": "[]",
-										className: "text-brand-red",
-										children: "simples, digital e sem burocracia"
-									})
-								]
-							})
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:16:13",
+							"data-prohibitions": "[editContent]",
+							className: "absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-white opacity-[0.03] rounded-full blur-3xl pointer-events-none"
 						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/Hero.tsx:21:13",
-							"data-prohibitions": "[]",
-							delay: 100,
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								"data-uid": "src/components/sections/Hero.tsx:22:15",
-								"data-prohibitions": "[]",
-								className: "text-lg md:text-xl text-brand-gray mb-8 leading-relaxed max-w-xl",
-								children: "A Bankap transforma vendas a prazo em dinheiro à vista para sua empresa seguir pagando fornecedores, folha e impostos em dia. Você envia suas notas fiscais, recebe análise rápida e antecipa com transparência, direto no app."
-							})
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:17:13",
+							"data-prohibitions": "[editContent]",
+							className: "absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-black opacity-[0.05] rounded-full blur-3xl pointer-events-none"
 						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-							"data-uid": "src/components/sections/Hero.tsx:29:13",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:19:13",
 							"data-prohibitions": "[]",
-							delay: 200,
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								"data-uid": "src/components/sections/Hero.tsx:30:15",
-								"data-prohibitions": "[]",
-								className: "flex flex-col sm:flex-row gap-4",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-									"data-uid": "src/components/sections/Hero.tsx:31:17",
+							className: "relative z-10",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									"data-uid": "src/components/sections/Hero.tsx:20:15",
 									"data-prohibitions": "[]",
-									size: "lg",
-									onClick: openModal,
-									className: "h-14 px-8 text-base bg-gradient-to-r from-brand-gradStart to-brand-gradEnd text-white hover:opacity-90 border-0",
-									children: ["Quero Antecipar", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
-										"data-uid": "src/components/sections/Hero.tsx:37:19",
+									className: "inline-flex items-center gap-2 border border-white/20 bg-white/5 backdrop-blur-sm rounded-full px-4 py-2 mb-8 md:mb-12",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, {
+										"data-uid": "src/components/sections/Hero.tsx:21:17",
 										"data-prohibitions": "[editContent]",
-										className: "ml-2 h-5 w-5"
+										className: "w-4 h-4 text-white"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										"data-uid": "src/components/sections/Hero.tsx:22:17",
+										"data-prohibitions": "[]",
+										className: "text-xs font-bold text-white tracking-wider uppercase",
+										children: "Especialista em Antecipação"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
+									"data-uid": "src/components/sections/Hero.tsx:27:15",
+									"data-prohibitions": "[]",
+									className: "text-[36px] md:text-[48px] lg:text-[56px] font-bold text-white leading-[1.05] mb-6 tracking-tight text-balance",
+									children: [
+										"Antecipe seus recebíveis e coloque o caixa na mão —",
+										" ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											"data-uid": "src/components/sections/Hero.tsx:29:17",
+											"data-prohibitions": "[]",
+											className: "text-white/70",
+											children: "simples, digital e sem burocracia."
+										})
+									]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									"data-uid": "src/components/sections/Hero.tsx:32:15",
+									"data-prohibitions": "[]",
+									className: "text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-xl font-sans",
+									children: "A Bankap transforma vendas a prazo em dinheiro à vista para sua empresa seguir pagando fornecedores, folha e impostos em dia. Você envia suas notas fiscais, recebe análise rápida e antecipa com transparência, direto no app."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									"data-uid": "src/components/sections/Hero.tsx:38:15",
+									"data-prohibitions": "[]",
+									className: "flex flex-col sm:flex-row gap-4 mb-16 md:mb-24",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+										"data-uid": "src/components/sections/Hero.tsx:39:17",
+										"data-prohibitions": "[]",
+										size: "lg",
+										onClick: openModal,
+										className: "rounded-full bg-white text-[#d61e38] hover:bg-white/90 h-14 px-8 font-bold text-base shadow-lg hover:shadow-xl transition-all",
+										children: ["Começar Agora", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, {
+											"data-uid": "src/components/sections/Hero.tsx:45:19",
+											"data-prohibitions": "[editContent]",
+											className: "ml-2 h-5 w-5",
+											strokeWidth: 2.5
+										})]
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+										"data-uid": "src/components/sections/Hero.tsx:47:17",
+										"data-prohibitions": "[]",
+										size: "lg",
+										variant: "outline",
+										className: "rounded-full border-white/30 text-white hover:bg-white/10 hover:text-white h-14 px-8 font-bold text-base bg-transparent transition-all",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MessageCircle, {
+											"data-uid": "src/components/sections/Hero.tsx:52:19",
+											"data-prohibitions": "[editContent]",
+											className: "mr-2 h-5 w-5"
+										}), "WhatsApp"]
 									})]
 								})
-							})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:58:13",
+							"data-prohibitions": "[]",
+							className: "relative z-10 flex items-start gap-4 mt-auto pt-8 border-t border-white/10",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								"data-uid": "src/components/sections/Hero.tsx:59:15",
+								"data-prohibitions": "[]",
+								className: "w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FileText, {
+									"data-uid": "src/components/sections/Hero.tsx:60:17",
+									"data-prohibitions": "[editContent]",
+									className: "w-6 h-6 text-white",
+									strokeWidth: 1.5
+								})
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/sections/Hero.tsx:62:15",
+								"data-prohibitions": "[]",
+								className: "flex flex-col justify-center h-12",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									"data-uid": "src/components/sections/Hero.tsx:63:17",
+									"data-prohibitions": "[]",
+									className: "text-white font-semibold text-sm md:text-base leading-snug",
+									children: "Processo estruturado e documentado."
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									"data-uid": "src/components/sections/Hero.tsx:66:17",
+									"data-prohibitions": "[]",
+									className: "text-white/70 text-sm md:text-base leading-snug",
+									children: "Atendimento digital e transparente."
+								})]
+							})]
 						})
 					]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, {
-					"data-uid": "src/components/sections/Hero.tsx:43:11",
-					"data-prohibitions": "[]",
-					delay: 300,
-					className: "relative lg:h-[600px] flex items-center justify-center",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/sections/Hero.tsx:44:13",
-						"data-prohibitions": "[editContent]",
-						className: "absolute inset-0 bg-gradient-to-tr from-brand-red/10 to-transparent rounded-full blur-3xl"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						"data-uid": "src/components/sections/Hero.tsx:45:13",
-						"data-prohibitions": "[editContent]",
-						src: "https://img.usecurling.com/p/800/600?q=financial%20dashboard&color=red&dpr=2",
-						alt: "Dashboard Financeiro Bankap",
-						className: "relative z-10 rounded-2xl shadow-2xl border border-white/50 w-full object-cover aspect-video lg:aspect-[4/3]"
-					})]
-				})]
-			})
+				})
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+				"data-uid": "src/components/sections/Hero.tsx:75:9",
+				"data-prohibitions": "[editContent]",
+				delay: 200,
+				className: "h-full",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/sections/Hero.tsx:76:11",
+					"data-prohibitions": "[editContent]",
+					className: "relative rounded-[32px] md:rounded-[48px] overflow-hidden bg-gray-100 min-h-[500px] lg:min-h-full shadow-2xl shadow-black/5 group",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							"data-uid": "src/components/sections/Hero.tsx:77:13",
+							"data-prohibitions": "[editContent]",
+							src: "https://img.usecurling.com/p/800/1000?q=professional%20business%20woman%20suit&dpr=2",
+							alt: "Especialista Bankap",
+							className: "absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:84:13",
+							"data-prohibitions": "[editContent]",
+							className: "absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 pointer-events-none"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							"data-uid": "src/components/sections/Hero.tsx:87:13",
+							"data-prohibitions": "[]",
+							className: "absolute bottom-6 left-6 md:bottom-10 md:left-10 bg-white p-5 md:p-6 rounded-3xl shadow-2xl max-w-[280px]",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/sections/Hero.tsx:88:15",
+								"data-prohibitions": "[]",
+								className: "flex -space-x-3 mb-4",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+										"data-uid": "src/components/sections/Hero.tsx:89:17",
+										"data-prohibitions": "[editContent]",
+										src: "https://img.usecurling.com/ppl/thumbnail?gender=female&seed=12",
+										alt: "Avatar 1",
+										className: "w-11 h-11 rounded-full border-2 border-white relative z-30 object-cover"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+										"data-uid": "src/components/sections/Hero.tsx:94:17",
+										"data-prohibitions": "[editContent]",
+										src: "https://img.usecurling.com/ppl/thumbnail?gender=male&seed=45",
+										alt: "Avatar 2",
+										className: "w-11 h-11 rounded-full border-2 border-white relative z-20 object-cover"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+										"data-uid": "src/components/sections/Hero.tsx:99:17",
+										"data-prohibitions": "[editContent]",
+										src: "https://img.usecurling.com/ppl/thumbnail?gender=female&seed=89",
+										alt: "Avatar 3",
+										className: "w-11 h-11 rounded-full border-2 border-white relative z-10 object-cover"
+									}),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										"data-uid": "src/components/sections/Hero.tsx:104:17",
+										"data-prohibitions": "[]",
+										className: "w-11 h-11 rounded-full border-2 border-white relative z-0 bg-[#d61e38] flex items-center justify-center text-xs font-bold text-white shadow-inner",
+										children: "+150"
+									})
+								]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+								"data-uid": "src/components/sections/Hero.tsx:108:15",
+								"data-prohibitions": "[]",
+								className: "text-sm text-brand-gray font-medium leading-relaxed font-sans",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									"data-uid": "src/components/sections/Hero.tsx:109:17",
+									"data-prohibitions": "[]",
+									className: "text-brand-dark font-bold",
+									children: "+150 empresas"
+								}), " com caixa saudável e em crescimento constante."]
+							})]
+						})
+					]
+				})
+			})]
 		})
 	});
 }
@@ -32361,20 +32512,24 @@ SheetDescription.displayName = Description.displayName;
 //#region src/components/Header.tsx
 var NAV_LINKS = [
 	{
-		name: "Como Funciona",
-		href: "#como-funciona"
+		name: "Home",
+		href: "#"
 	},
 	{
-		name: "Diferenciais",
-		href: "#diferenciais"
+		name: "Sobre",
+		href: "#sobre"
 	},
 	{
-		name: "Para Quem",
-		href: "#para-quem"
+		name: "Serviços",
+		href: "#servicos"
 	},
 	{
-		name: "Benefícios",
-		href: "#beneficios"
+		name: "Processo",
+		href: "#processo"
+	},
+	{
+		name: "Especialista",
+		href: "#especialista"
 	}
 ];
 function Header() {
@@ -32382,146 +32537,139 @@ function Header() {
 	const { openModal } = useModal();
 	(0, import_react.useEffect)(() => {
 		const handleScroll = () => {
-			setIsScrolled(window.scrollY > 10);
+			setIsScrolled(window.scrollY > 20);
 		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
-		"data-uid": "src/components/Header.tsx:28:5",
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		"data-uid": "src/components/Header.tsx:29:5",
 		"data-prohibitions": "[editContent]",
-		className: cn$1("fixed top-0 left-0 right-0 z-50 transition-all duration-300", isScrolled ? "bg-white/80 backdrop-blur-md border-b border-gray-200 py-3 shadow-sm" : "bg-transparent py-5"),
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/Header.tsx:36:7",
+		className: "fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4 transition-all duration-300",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+			"data-uid": "src/components/Header.tsx:30:7",
 			"data-prohibitions": "[editContent]",
-			className: "container mx-auto px-4 flex items-center justify-between",
+			className: cn$1("bg-white rounded-full flex items-center justify-between w-full max-w-6xl transition-all duration-300 border", isScrolled ? "shadow-lg border-gray-200 py-2 px-2" : "shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-transparent py-3 px-4 md:py-2 md:px-2"),
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-					"data-uid": "src/components/Header.tsx:38:9",
+					"data-uid": "src/components/Header.tsx:39:9",
 					"data-prohibitions": "[]",
 					href: "#",
-					className: "flex items-center gap-2",
+					className: "flex items-center gap-2 pl-2 md:pl-4",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/Header.tsx:39:11",
+						"data-uid": "src/components/Header.tsx:40:11",
 						"data-prohibitions": "[]",
-						className: "w-8 h-8 rounded bg-brand-red flex items-center justify-center",
+						className: "w-8 h-8 rounded-lg bg-brand-red flex items-center justify-center",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							"data-uid": "src/components/Header.tsx:40:13",
+							"data-uid": "src/components/Header.tsx:41:13",
 							"data-prohibitions": "[]",
 							className: "text-white font-bold text-xl leading-none",
 							children: "B"
 						})
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						"data-uid": "src/components/Header.tsx:42:11",
+						"data-uid": "src/components/Header.tsx:43:11",
 						"data-prohibitions": "[]",
-						className: "font-bold text-2xl tracking-tight text-brand-dark",
+						className: "font-bold text-xl tracking-tight text-brand-dark hidden sm:block",
 						children: "Bankap"
 					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-					"data-uid": "src/components/Header.tsx:46:9",
+					"data-uid": "src/components/Header.tsx:49:9",
 					"data-prohibitions": "[editContent]",
 					className: "hidden lg:flex items-center gap-8",
-					children: NAV_LINKS.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						"data-uid": "src/components/Header.tsx:48:13",
+					children: NAV_LINKS.map((link, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						"data-uid": "src/components/Header.tsx:51:13",
 						"data-prohibitions": "[editContent]",
 						href: link.href,
-						className: "text-sm font-medium text-brand-gray hover:text-brand-red transition-colors",
+						className: cn$1("text-sm font-semibold transition-colors", i === 0 ? "text-brand-dark" : "text-brand-gray hover:text-brand-red"),
 						children: link.name
 					}, link.name))
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/Header.tsx:59:9",
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					"data-uid": "src/components/Header.tsx:65:9",
 					"data-prohibitions": "[]",
-					className: "hidden lg:flex items-center gap-4",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-						"data-uid": "src/components/Header.tsx:60:11",
-						"data-prohibitions": "[]",
-						variant: "outline",
-						className: "border-brand-red text-brand-red hover:bg-brand-red/5",
-						children: "Acessar Portal"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+					className: "hidden lg:flex items-center gap-2 pr-1",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
 						"data-uid": "src/components/Header.tsx:66:11",
 						"data-prohibitions": "[]",
 						onClick: openModal,
-						className: "bg-gradient-to-r from-brand-gradStart to-brand-gradEnd text-white hover:opacity-90 border-0",
-						children: "Começar Agora"
-					})]
+						className: "rounded-full bg-brand-red text-white hover:bg-brand-red/90 h-10 px-6 font-semibold shadow-md hover:shadow-lg transition-all",
+						children: ["Começar Agora ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, {
+							"data-uid": "src/components/Header.tsx:70:27",
+							"data-prohibitions": "[editContent]",
+							className: "ml-1.5 w-4 h-4",
+							strokeWidth: 2.5
+						})]
+					})
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Sheet, {
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					"data-uid": "src/components/Header.tsx:75:9",
 					"data-prohibitions": "[editContent]",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTrigger, {
+					className: "lg:hidden pr-1",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Sheet, {
 						"data-uid": "src/components/Header.tsx:76:11",
-						"data-prohibitions": "[]",
-						asChild: true,
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+						"data-prohibitions": "[editContent]",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTrigger, {
 							"data-uid": "src/components/Header.tsx:77:13",
 							"data-prohibitions": "[]",
-							variant: "ghost",
-							size: "icon",
-							className: "lg:hidden text-brand-dark",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
+							asChild: true,
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
 								"data-uid": "src/components/Header.tsx:78:15",
-								"data-prohibitions": "[editContent]",
-								className: "h-6 w-6"
+								"data-prohibitions": "[]",
+								variant: "ghost",
+								size: "icon",
+								className: "rounded-full text-brand-dark",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
+									"data-uid": "src/components/Header.tsx:79:17",
+									"data-prohibitions": "[editContent]",
+									className: "h-6 w-6"
+								})
 							})
-						})
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetContent, {
-						"data-uid": "src/components/Header.tsx:81:11",
-						"data-prohibitions": "[editContent]",
-						side: "right",
-						className: "w-[300px] sm:w-[400px] bg-white border-l-0",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetContent, {
 							"data-uid": "src/components/Header.tsx:82:13",
 							"data-prohibitions": "[editContent]",
-							className: "flex flex-col h-full mt-8",
+							side: "right",
+							className: "w-[300px] sm:w-[400px] bg-white border-l-0 flex flex-col pt-16",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-								"data-uid": "src/components/Header.tsx:83:15",
+								"data-uid": "src/components/Header.tsx:86:15",
 								"data-prohibitions": "[editContent]",
-								className: "flex flex-col gap-4",
-								children: NAV_LINKS.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetClose, {
-									"data-uid": "src/components/Header.tsx:85:19",
+								className: "flex flex-col gap-6",
+								children: NAV_LINKS.map((link, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetClose, {
+									"data-uid": "src/components/Header.tsx:88:19",
 									"data-prohibitions": "[editContent]",
 									asChild: true,
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										"data-uid": "src/components/Header.tsx:86:21",
+										"data-uid": "src/components/Header.tsx:89:21",
 										"data-prohibitions": "[editContent]",
 										href: link.href,
-										className: "text-lg font-medium text-brand-dark hover:text-brand-red py-2 border-b border-gray-100",
+										className: cn$1("text-2xl font-semibold transition-colors", i === 0 ? "text-brand-dark" : "text-brand-gray hover:text-brand-red"),
 										children: link.name
 									})
 								}, link.name))
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/Header.tsx:95:15",
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								"data-uid": "src/components/Header.tsx:101:15",
 								"data-prohibitions": "[]",
-								className: "mt-auto flex flex-col gap-4 pb-8",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetClose, {
-									"data-uid": "src/components/Header.tsx:96:17",
+								className: "mt-auto pb-8",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetClose, {
+									"data-uid": "src/components/Header.tsx:102:17",
 									"data-prohibitions": "[]",
 									asChild: true,
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-										"data-uid": "src/components/Header.tsx:97:19",
-										"data-prohibitions": "[]",
-										variant: "outline",
-										className: "w-full border-brand-red text-brand-red",
-										children: "Acessar Portal"
-									})
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetClose, {
-									"data-uid": "src/components/Header.tsx:101:17",
-									"data-prohibitions": "[]",
-									asChild: true,
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-										"data-uid": "src/components/Header.tsx:102:19",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+										"data-uid": "src/components/Header.tsx:103:19",
 										"data-prohibitions": "[]",
 										onClick: openModal,
-										className: "w-full bg-gradient-to-r from-brand-gradStart to-brand-gradEnd text-white",
-										children: "Começar Agora"
+										className: "w-full rounded-full bg-brand-red text-white hover:bg-brand-red/90 h-14 text-lg font-bold shadow-lg",
+										children: ["Começar Agora ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowUpRight, {
+											"data-uid": "src/components/Header.tsx:107:35",
+											"data-prohibitions": "[editContent]",
+											className: "ml-2 w-5 h-5",
+											strokeWidth: 2.5
+										})]
 									})
-								})]
+								})
 							})]
-						})
-					})]
+						})]
+					})
 				})
 			]
 		})
@@ -32816,7 +32964,7 @@ function Layout() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		"data-uid": "src/components/Layout.tsx:8:5",
 		"data-prohibitions": "[]",
-		className: "flex flex-col min-h-screen",
+		className: "flex flex-col min-h-screen bg-[#f8f9fa] selection:bg-brand-red/20 selection:text-brand-dark",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Header, {
 				"data-uid": "src/components/Layout.tsx:9:7",
@@ -32825,7 +32973,7 @@ function Layout() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
 				"data-uid": "src/components/Layout.tsx:10:7",
 				"data-prohibitions": "[]",
-				className: "flex-grow pt-[88px]",
+				className: "flex-grow pt-[104px]",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {
 					"data-uid": "src/components/Layout.tsx:11:9",
 					"data-prohibitions": "[editContent]"
@@ -32907,4 +33055,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-fP8-5QAI.js.map
+//# sourceMappingURL=index-2RhsNMjp.js.map

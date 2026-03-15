@@ -5,9 +5,9 @@ import { LeadCaptureModal } from './LeadCaptureModal'
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-[#f8f9fa] selection:bg-brand-red/20 selection:text-brand-dark">
       <Header />
-      <main className="flex-grow pt-[88px]">
+      <main className="flex-grow pt-[104px]">
         <Outlet />
       </main>
       <Footer />
