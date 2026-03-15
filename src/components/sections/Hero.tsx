@@ -19,12 +19,6 @@ export function Hero() {
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full blur-2xl -ml-24 -mb-24"></div>
 
               <div className="relative z-10">
-                <img
-                  src={logoNegative}
-                  alt="Bankap"
-                  className="h-12 md:h-14 w-auto object-contain mb-10"
-                />
-
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 font-sans">
                   Antecipe seus recebíveis e coloque o caixa na mão — simples, digital e sem
                   burocracia

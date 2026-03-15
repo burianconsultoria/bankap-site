@@ -24311,9 +24311,6 @@ function Reveal({ children, className, delay = 0 }) {
 	});
 }
 //#endregion
-//#region src/assets/af_bankap-06-16d0d.png
-var af_bankap_06_16d0d_default = "/assets/af_bankap-06-16d0d-B5ifLuXh.png";
-//#endregion
 //#region src/components/sections/Hero.tsx
 function Hero() {
 	const { openModal } = useModal();
@@ -24353,69 +24350,62 @@ function Hero() {
 								"data-prohibitions": "[]",
 								className: "relative z-10",
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-										"data-uid": "src/components/sections/Hero.tsx:22:17",
-										"data-prohibitions": "[editContent]",
-										src: af_bankap_06_16d0d_default,
-										alt: "Bankap",
-										className: "h-12 md:h-14 w-auto object-contain mb-10"
-									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-										"data-uid": "src/components/sections/Hero.tsx:28:17",
+										"data-uid": "src/components/sections/Hero.tsx:22:17",
 										"data-prohibitions": "[]",
 										className: "text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 font-sans",
 										children: "Antecipe seus recebíveis e coloque o caixa na mão — simples, digital e sem burocracia"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										"data-uid": "src/components/sections/Hero.tsx:33:17",
+										"data-uid": "src/components/sections/Hero.tsx:27:17",
 										"data-prohibitions": "[]",
 										className: "text-lg md:text-xl text-white/90 mb-10 font-sans leading-relaxed max-w-lg",
 										children: "Acelere o crescimento da sua empresa com taxas justas e dinheiro na conta em poucos cliques. Assuma o controle do seu fluxo de caixa hoje."
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										"data-uid": "src/components/sections/Hero.tsx:38:17",
+										"data-uid": "src/components/sections/Hero.tsx:32:17",
 										"data-prohibitions": "[]",
 										className: "flex flex-col sm:flex-row gap-4 mb-10",
 										children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-											"data-uid": "src/components/sections/Hero.tsx:39:19",
+											"data-uid": "src/components/sections/Hero.tsx:33:19",
 											"data-prohibitions": "[]",
 											onClick: openModal,
 											size: "lg",
 											className: "bg-white text-primary hover:bg-gray-100 rounded-full font-bold px-8 h-14 text-base w-full sm:w-auto transition-all hover:scale-105",
 											children: ["Simular Antecipação", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
-												"data-uid": "src/components/sections/Hero.tsx:45:21",
+												"data-uid": "src/components/sections/Hero.tsx:39:21",
 												"data-prohibitions": "[editContent]",
 												className: "ml-2 h-5 w-5"
 											})]
 										})
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										"data-uid": "src/components/sections/Hero.tsx:49:17",
+										"data-uid": "src/components/sections/Hero.tsx:43:17",
 										"data-prohibitions": "[]",
 										className: "flex flex-col sm:flex-row gap-6 text-sm text-white/90 font-medium",
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/sections/Hero.tsx:50:19",
+											"data-uid": "src/components/sections/Hero.tsx:44:19",
 											"data-prohibitions": "[]",
 											className: "flex items-center gap-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, {
-												"data-uid": "src/components/sections/Hero.tsx:51:21",
+												"data-uid": "src/components/sections/Hero.tsx:45:21",
 												"data-prohibitions": "[editContent]",
 												className: "h-5 w-5 text-green-400 shrink-0"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												"data-uid": "src/components/sections/Hero.tsx:52:21",
+												"data-uid": "src/components/sections/Hero.tsx:46:21",
 												"data-prohibitions": "[]",
 												children: "Aprovação em até 24h"
 											})]
 										}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											"data-uid": "src/components/sections/Hero.tsx:54:19",
+											"data-uid": "src/components/sections/Hero.tsx:48:19",
 											"data-prohibitions": "[]",
 											className: "flex items-center gap-2",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CircleCheck, {
-												"data-uid": "src/components/sections/Hero.tsx:55:21",
+												"data-uid": "src/components/sections/Hero.tsx:49:21",
 												"data-prohibitions": "[editContent]",
 												className: "h-5 w-5 text-green-400 shrink-0"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												"data-uid": "src/components/sections/Hero.tsx:56:21",
+												"data-uid": "src/components/sections/Hero.tsx:50:21",
 												"data-prohibitions": "[]",
 												children: "Processo 100% Digital"
 											})]
@@ -24426,39 +24416,39 @@ function Hero() {
 						]
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/Hero.tsx:64:11",
+					"data-uid": "src/components/sections/Hero.tsx:58:11",
 					"data-prohibitions": "[]",
 					animation: "slide-up",
 					delay: 200,
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						"data-uid": "src/components/sections/Hero.tsx:65:13",
+						"data-uid": "src/components/sections/Hero.tsx:59:13",
 						"data-prohibitions": "[]",
 						className: "relative h-[450px] md:h-[650px] rounded-[2rem] overflow-hidden shadow-xl group",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-							"data-uid": "src/components/sections/Hero.tsx:66:15",
+							"data-uid": "src/components/sections/Hero.tsx:60:15",
 							"data-prohibitions": "[editContent]",
 							src: "https://img.usecurling.com/p/800/1000?q=business%20meeting&dpr=2",
 							alt: "Empresários na mesa de reunião",
 							className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							"data-uid": "src/components/sections/Hero.tsx:71:15",
+							"data-uid": "src/components/sections/Hero.tsx:65:15",
 							"data-prohibitions": "[]",
 							className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-10",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								"data-uid": "src/components/sections/Hero.tsx:72:17",
+								"data-uid": "src/components/sections/Hero.tsx:66:17",
 								"data-prohibitions": "[]",
 								className: "bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white max-w-sm transform translate-y-0 transition-transform duration-500",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-									"data-uid": "src/components/sections/Hero.tsx:73:19",
+									"data-uid": "src/components/sections/Hero.tsx:67:19",
 									"data-prohibitions": "[]",
 									className: "font-bold text-xl mb-2 flex items-center gap-2",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-										"data-uid": "src/components/sections/Hero.tsx:74:21",
+										"data-uid": "src/components/sections/Hero.tsx:68:21",
 										"data-prohibitions": "[]",
 										className: "w-2 h-2 rounded-full bg-green-400 animate-pulse"
 									}), "Fluxo de caixa no verde"]
 								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									"data-uid": "src/components/sections/Hero.tsx:77:19",
+									"data-uid": "src/components/sections/Hero.tsx:71:19",
 									"data-prohibitions": "[]",
 									className: "text-sm opacity-90 leading-relaxed font-sans",
 									children: "Empreendedores inteligentes usam a Bankap para manter a operação girando sem depender de prazos longos dos clientes."
@@ -32808,4 +32798,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-CMW7tpL2.js.map
+//# sourceMappingURL=index-BU5EAVKW.js.map
