@@ -13,7 +13,7 @@ export function Hero() {
           <div className="max-w-2xl">
             <Reveal>
               <h1 className="text-4xl md:text-5xl lg:text-[64px] font-bold text-brand-dark leading-[1.1] mb-6 text-balance">
-                Antecipe seus recebíveis e coloque o caixa na mão —{' '}
+                Antecipe seus recebíveis e tenha o caixa na mão —{' '}
                 <span className="text-brand-red">simples, digital e sem burocracia</span>
               </h1>
             </Reveal>
@@ -35,14 +35,6 @@ export function Hero() {
                 >
                   Quero Antecipar
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="h-14 px-8 text-base border-gray-300 text-brand-dark hover:bg-gray-50"
-                >
-                  <PlayCircle className="mr-2 h-5 w-5 text-brand-red" />
-                  Ver Vídeo
                 </Button>
               </div>
             </Reveal>

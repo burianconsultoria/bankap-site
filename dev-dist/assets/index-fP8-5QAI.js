@@ -19066,15 +19066,6 @@ var CircleCheck = createLucideIcon("circle-check", [["circle", {
 	d: "m9 12 2 2 4-4",
 	key: "dzmm74"
 }]]);
-var CirclePlay = createLucideIcon("circle-play", [["path", {
-	d: "M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z",
-	key: "kmsa83"
-}], ["circle", {
-	cx: "12",
-	cy: "12",
-	r: "10",
-	key: "1mglay"
-}]]);
 var CloudUpload = createLucideIcon("cloud-upload", [
 	["path", {
 		d: "M12 13v8",
@@ -24373,7 +24364,7 @@ function Hero() {
 								"data-prohibitions": "[]",
 								className: "text-4xl md:text-5xl lg:text-[64px] font-bold text-brand-dark leading-[1.1] mb-6 text-balance",
 								children: [
-									"Antecipe seus recebíveis e coloque o caixa na mão —",
+									"Antecipe seus recebíveis e tenha o caixa na mão —",
 									" ",
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 										"data-uid": "src/components/sections/Hero.tsx:17:17",
@@ -24399,11 +24390,11 @@ function Hero() {
 							"data-uid": "src/components/sections/Hero.tsx:29:13",
 							"data-prohibitions": "[]",
 							delay: 200,
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								"data-uid": "src/components/sections/Hero.tsx:30:15",
 								"data-prohibitions": "[]",
 								className: "flex flex-col sm:flex-row gap-4",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
 									"data-uid": "src/components/sections/Hero.tsx:31:17",
 									"data-prohibitions": "[]",
 									size: "lg",
@@ -24414,32 +24405,21 @@ function Hero() {
 										"data-prohibitions": "[editContent]",
 										className: "ml-2 h-5 w-5"
 									})]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-									"data-uid": "src/components/sections/Hero.tsx:39:17",
-									"data-prohibitions": "[]",
-									size: "lg",
-									variant: "outline",
-									className: "h-14 px-8 text-base border-gray-300 text-brand-dark hover:bg-gray-50",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CirclePlay, {
-										"data-uid": "src/components/sections/Hero.tsx:44:19",
-										"data-prohibitions": "[editContent]",
-										className: "mr-2 h-5 w-5 text-brand-red"
-									}), "Ver Vídeo"]
-								})]
+								})
 							})
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Reveal, {
-					"data-uid": "src/components/sections/Hero.tsx:51:11",
+					"data-uid": "src/components/sections/Hero.tsx:43:11",
 					"data-prohibitions": "[]",
 					delay: 300,
 					className: "relative lg:h-[600px] flex items-center justify-center",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						"data-uid": "src/components/sections/Hero.tsx:52:13",
+						"data-uid": "src/components/sections/Hero.tsx:44:13",
 						"data-prohibitions": "[editContent]",
 						className: "absolute inset-0 bg-gradient-to-tr from-brand-red/10 to-transparent rounded-full blur-3xl"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						"data-uid": "src/components/sections/Hero.tsx:53:13",
+						"data-uid": "src/components/sections/Hero.tsx:45:13",
 						"data-prohibitions": "[editContent]",
 						src: "https://img.usecurling.com/p/800/600?q=financial%20dashboard&color=red&dpr=2",
 						alt: "Dashboard Financeiro Bankap",
@@ -32927,4 +32907,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-5jUvOxet.js.map
+//# sourceMappingURL=index-fP8-5QAI.js.map
