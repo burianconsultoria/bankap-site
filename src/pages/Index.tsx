@@ -1,6 +1,5 @@
 import { Hero } from '@/components/sections/Hero'
 import { ProblemAwareness } from '@/components/sections/ProblemAwareness'
-import { StrategicValue } from '@/components/sections/StrategicValue'
 import { HowItWorks } from '@/components/sections/HowItWorks'
 import { Differentiators } from '@/components/sections/Differentiators'
 import { TargetAudience } from '@/components/sections/TargetAudience'
@@ -13,7 +12,6 @@ const Index = () => {
     <div className="w-full">
       <Hero />
       <ProblemAwareness />
-      <StrategicValue />
       <HowItWorks />
       <Differentiators />
       <TargetAudience />

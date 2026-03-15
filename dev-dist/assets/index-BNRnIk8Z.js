@@ -19119,6 +19119,20 @@ var Laptop = createLucideIcon("laptop", [["path", {
 	d: "M20.054 15.987H3.946",
 	key: "14rxg9"
 }]]);
+var Layers = createLucideIcon("layers", [
+	["path", {
+		d: "M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z",
+		key: "zw3jo"
+	}],
+	["path", {
+		d: "M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12",
+		key: "1wduqc"
+	}],
+	["path", {
+		d: "M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17",
+		key: "kqbvx6"
+	}]
+]);
 var Mail = createLucideIcon("mail", [["path", {
 	d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7",
 	key: "132q7q"
@@ -19164,6 +19178,13 @@ var ShieldCheck = createLucideIcon("shield-check", [["path", {
 	d: "m9 12 2 2 4-4",
 	key: "dzmm74"
 }]]);
+var TrendingDown = createLucideIcon("trending-down", [["path", {
+	d: "M16 17h6v-6",
+	key: "t6n2it"
+}], ["path", {
+	d: "m22 17-8.5-8.5-5 5L2 7",
+	key: "x473p"
+}]]);
 var TrendingUp = createLucideIcon("trending-up", [["path", {
 	d: "M16 7h6v6",
 	key: "box55l"
@@ -19171,6 +19192,26 @@ var TrendingUp = createLucideIcon("trending-up", [["path", {
 	d: "m22 7-8.5 8.5-5-5L2 17",
 	key: "1t1m79"
 }]]);
+var Users = createLucideIcon("users", [
+	["path", {
+		d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",
+		key: "1yyitq"
+	}],
+	["path", {
+		d: "M16 3.128a4 4 0 0 1 0 7.744",
+		key: "16gr8j"
+	}],
+	["path", {
+		d: "M22 21v-2a4 4 0 0 0-3-3.87",
+		key: "kshegd"
+	}],
+	["circle", {
+		cx: "9",
+		cy: "7",
+		r: "4",
+		key: "nufk8"
+	}]
+]);
 var X = createLucideIcon("x", [["path", {
 	d: "M18 6 6 18",
 	key: "1bl5f8"
@@ -24463,88 +24504,155 @@ function Hero() {
 }
 //#endregion
 //#region src/components/sections/ProblemAwareness.tsx
+var PROBLEMS = [
+	{
+		icon: Layers,
+		title: "DESORGANIZAÇÃO CUSTOSA",
+		description: "Ativos espalhados em diversas instituições dificultam a visão global e impedem a otimização tributária e de rentabilidade."
+	},
+	{
+		icon: Users,
+		title: "CONFLITO DE INTERESSES",
+		description: "Conselhos genéricos de gerentes de banco geralmente atendem às metas da instituição, não aos seus objetivos de vida."
+	},
+	{
+		icon: TrendingDown,
+		title: "RISCO SILENCIOSO",
+		description: "Investir sem alinhar prazos e riscos ao seu momento de vida pode expor seu patrimônio a perdas desnecessárias."
+	}
+];
 function ProblemAwareness() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-		"data-uid": "src/components/sections/ProblemAwareness.tsx:5:5",
-		"data-prohibitions": "[]",
+		"data-uid": "src/components/sections/ProblemAwareness.tsx:27:5",
+		"data-prohibitions": "[editContent]",
 		className: "py-20 lg:py-32 bg-white",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			"data-uid": "src/components/sections/ProblemAwareness.tsx:6:7",
-			"data-prohibitions": "[]",
+			"data-uid": "src/components/sections/ProblemAwareness.tsx:28:7",
+			"data-prohibitions": "[editContent]",
 			className: "container mx-auto px-4",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/sections/ProblemAwareness.tsx:7:9",
-				"data-prohibitions": "[]",
-				className: "max-w-4xl mx-auto text-center",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/ProblemAwareness.tsx:8:11",
-					"data-prohibitions": "[]",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						"data-uid": "src/components/sections/ProblemAwareness.tsx:9:13",
-						"data-prohibitions": "[]",
-						className: "text-3xl md:text-[40px] font-bold text-brand-dark mb-6 leading-tight",
-						children: "O seu dinheiro não pode ficar preso no prazo"
-					})
+				"data-uid": "src/components/sections/ProblemAwareness.tsx:29:9",
+				"data-prohibitions": "[editContent]",
+				className: "grid lg:grid-cols-2 gap-12 lg:gap-20 items-center",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					"data-uid": "src/components/sections/ProblemAwareness.tsx:31:11",
+					"data-prohibitions": "[editContent]",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							"data-uid": "src/components/sections/ProblemAwareness.tsx:32:13",
+							"data-prohibitions": "[]",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								"data-uid": "src/components/sections/ProblemAwareness.tsx:33:15",
+								"data-prohibitions": "[]",
+								className: "flex items-center gap-4 mb-8",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									"data-uid": "src/components/sections/ProblemAwareness.tsx:34:17",
+									"data-prohibitions": "[]",
+									className: "text-[10px] md:text-xs font-bold text-blue-700 border border-blue-200 px-4 py-1.5 rounded-full uppercase tracking-wider whitespace-nowrap",
+									children: "O Problema Real"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									"data-uid": "src/components/sections/ProblemAwareness.tsx:37:17",
+									"data-prohibitions": "[]",
+									className: "flex-1 h-px bg-blue-100 relative max-w-[200px]",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										"data-uid": "src/components/sections/ProblemAwareness.tsx:38:19",
+										"data-prohibitions": "[]",
+										className: "absolute right-0 top-1/2 -translate-y-1/2 w-1 h-1 bg-blue-700 rounded-sm"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										"data-uid": "src/components/sections/ProblemAwareness.tsx:39:19",
+										"data-prohibitions": "[]",
+										className: "absolute left-0 top-1/2 -translate-y-1/2 w-1 h-1 bg-blue-700 rounded-sm"
+									})]
+								})]
+							})
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							"data-uid": "src/components/sections/ProblemAwareness.tsx:44:13",
+							"data-prohibitions": "[]",
+							delay: 100,
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+								"data-uid": "src/components/sections/ProblemAwareness.tsx:45:15",
+								"data-prohibitions": "[]",
+								className: "text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-[1.15] tracking-tight font-display",
+								children: "Seu patrimônio merece mais do que improviso"
+							})
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							"data-uid": "src/components/sections/ProblemAwareness.tsx:50:13",
+							"data-prohibitions": "[]",
+							delay: 200,
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								"data-uid": "src/components/sections/ProblemAwareness.tsx:51:15",
+								"data-prohibitions": "[]",
+								className: "text-lg text-slate-500 mb-10 leading-relaxed max-w-xl",
+								children: "Sem um plano estratégico e acompanhamento real, o risco de perder dinheiro ou oportunidades crescem, e a tranquilidade financeira fica cada vez mais distante."
+							})
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/sections/ProblemAwareness.tsx:57:13",
+							"data-prohibitions": "[editContent]",
+							className: "flex flex-col gap-4",
+							children: PROBLEMS.map((problem, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+								"data-uid": "src/components/sections/ProblemAwareness.tsx:59:17",
+								"data-prohibitions": "[editContent]",
+								delay: 300 + index * 100,
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									"data-uid": "src/components/sections/ProblemAwareness.tsx:60:19",
+									"data-prohibitions": "[editContent]",
+									className: "flex gap-5 bg-slate-50/70 hover:bg-slate-50 p-6 rounded-2xl transition-all duration-300 border border-transparent hover:border-slate-100 group",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+										"data-uid": "src/components/sections/ProblemAwareness.tsx:61:21",
+										"data-prohibitions": "[]",
+										className: "bg-white rounded-xl p-3 shadow-sm h-fit shrink-0 group-hover:shadow-md transition-shadow",
+										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(problem.icon, {
+											"data-uid": "src/components/sections/ProblemAwareness.tsx:62:23",
+											"data-prohibitions": "[editContent]",
+											className: "w-6 h-6 text-blue-600",
+											strokeWidth: 1.5
+										})
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+										"data-uid": "src/components/sections/ProblemAwareness.tsx:64:21",
+										"data-prohibitions": "[editContent]",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h4", {
+											"data-uid": "src/components/sections/ProblemAwareness.tsx:65:23",
+											"data-prohibitions": "[editContent]",
+											className: "font-bold text-slate-900 mb-2 text-sm uppercase tracking-wide",
+											children: problem.title
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											"data-uid": "src/components/sections/ProblemAwareness.tsx:68:23",
+											"data-prohibitions": "[editContent]",
+											className: "text-slate-500 text-sm leading-relaxed",
+											children: problem.description
+										})]
+									})]
+								})
+							}, index))
+						})
+					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/ProblemAwareness.tsx:14:11",
+					"data-uid": "src/components/sections/ProblemAwareness.tsx:79:11",
 					"data-prohibitions": "[]",
-					delay: 100,
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/sections/ProblemAwareness.tsx:15:13",
+					delay: 400,
+					className: "h-full",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						"data-uid": "src/components/sections/ProblemAwareness.tsx:80:13",
 						"data-prohibitions": "[]",
-						className: "text-lg md:text-xl text-brand-gray leading-relaxed text-balance",
-						children: "Se você vende em 30, 60 ou 90 dias, você acaba \"financiando\" seus clientes sem querer. A Bankap existe para destravar o caixa que já é do seu negócio e devolver o controle do seu fluxo financeiro. Pare de adiar o crescimento por falta de liquidez imediata."
+						className: "relative h-full min-h-[500px] lg:min-h-[700px] rounded-3xl overflow-hidden shadow-2xl group",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							"data-uid": "src/components/sections/ProblemAwareness.tsx:81:15",
+							"data-prohibitions": "[editContent]",
+							src: "https://img.usecurling.com/p/800/1000?q=worried%20couple%20finances&color=blue&dpr=2",
+							alt: "Casal preocupado analisando documentos financeiros",
+							className: "absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							"data-uid": "src/components/sections/ProblemAwareness.tsx:86:15",
+							"data-prohibitions": "[]",
+							className: "absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-60"
+						})]
 					})
 				})]
 			})
 		})
-	});
-}
-//#endregion
-//#region src/components/sections/StrategicValue.tsx
-function StrategicValue() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-		"data-uid": "src/components/sections/StrategicValue.tsx:5:5",
-		"data-prohibitions": "[editContent]",
-		className: "py-16 bg-brand-light relative overflow-hidden",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			"data-uid": "src/components/sections/StrategicValue.tsx:7:7",
-			"data-prohibitions": "[]",
-			className: "absolute inset-0 opacity-[0.03]",
-			style: {
-				backgroundImage: "radial-gradient(#d61e38 1px, transparent 1px)",
-				backgroundSize: "32px 32px"
-			}
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-			"data-uid": "src/components/sections/StrategicValue.tsx:15:7",
-			"data-prohibitions": "[]",
-			className: "container mx-auto px-4 relative z-10",
-			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				"data-uid": "src/components/sections/StrategicValue.tsx:16:9",
-				"data-prohibitions": "[]",
-				className: "max-w-3xl mx-auto text-center",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/StrategicValue.tsx:17:11",
-					"data-prohibitions": "[]",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						"data-uid": "src/components/sections/StrategicValue.tsx:18:13",
-						"data-prohibitions": "[]",
-						className: "text-2xl md:text-[32px] font-bold text-brand-dark mb-4",
-						children: "Mais controle, menos improviso"
-					})
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
-					"data-uid": "src/components/sections/StrategicValue.tsx:23:11",
-					"data-prohibitions": "[]",
-					delay: 100,
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						"data-uid": "src/components/sections/StrategicValue.tsx:24:13",
-						"data-prohibitions": "[]",
-						className: "text-base md:text-lg text-brand-gray leading-relaxed",
-						children: "Antecipar não é \"fazer dívida por desespero\". É organizar o ciclo de caixa para decidir com calma, negociar melhor com seus fornecedores e crescer sem sufoco. Tenha a previsibilidade que sua empresa merece."
-					})
-				})]
-			})
-		})]
 	});
 }
 //#endregion
@@ -32222,44 +32330,40 @@ function LeadCaptureModal() {
 //#region src/pages/Index.tsx
 var Index = () => {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		"data-uid": "src/pages/Index.tsx:13:5",
+		"data-uid": "src/pages/Index.tsx:12:5",
 		"data-prohibitions": "[]",
 		className: "w-full",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Hero, {
-				"data-uid": "src/pages/Index.tsx:14:7",
+				"data-uid": "src/pages/Index.tsx:13:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ProblemAwareness, {
-				"data-uid": "src/pages/Index.tsx:15:7",
-				"data-prohibitions": "[editContent]"
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(StrategicValue, {
-				"data-uid": "src/pages/Index.tsx:16:7",
+				"data-uid": "src/pages/Index.tsx:14:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HowItWorks, {
-				"data-uid": "src/pages/Index.tsx:17:7",
+				"data-uid": "src/pages/Index.tsx:15:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Differentiators, {
-				"data-uid": "src/pages/Index.tsx:18:7",
+				"data-uid": "src/pages/Index.tsx:16:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(TargetAudience, {
-				"data-uid": "src/pages/Index.tsx:19:7",
+				"data-uid": "src/pages/Index.tsx:17:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Benefits, {
-				"data-uid": "src/pages/Index.tsx:20:7",
+				"data-uid": "src/pages/Index.tsx:18:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FinalCTA, {
-				"data-uid": "src/pages/Index.tsx:21:7",
+				"data-uid": "src/pages/Index.tsx:19:7",
 				"data-prohibitions": "[editContent]"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LeadCaptureModal, {
-				"data-uid": "src/pages/Index.tsx:22:7",
+				"data-uid": "src/pages/Index.tsx:20:7",
 				"data-prohibitions": "[editContent]"
 			})
 		]
@@ -32798,4 +32902,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-BU5EAVKW.js.map
+//# sourceMappingURL=index-BNRnIk8Z.js.map
