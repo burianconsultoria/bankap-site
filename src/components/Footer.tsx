@@ -100,16 +100,12 @@ export function Footer() {
               <li className="flex items-center gap-3 text-sm text-gray-600 font-medium">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <a href="tel:08001234567" className="hover:text-primary transition-colors">
-                  0800 123 4567
+                  (11)&nbsp;4803-0473
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-600 font-medium">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span>
-                  Av. Brigadeiro Faria Lima, 1234
-                  <br />
-                  São Paulo, SP
-                </span>
+                <span>R. Dr. Ramos de Azevedo, 159 - Centro, Guarulhos - SP, 07012-020</span>
               </li>
             </ul>
           </div>
