@@ -32308,6 +32308,7 @@ var DescriptionWarning = ({ contentRef, descriptionId }) => {
 	return null;
 };
 var Root$1 = Dialog$1;
+var Trigger = DialogTrigger$1;
 var Portal = DialogPortal$1;
 var Overlay = DialogOverlay$1;
 var Content = DialogContent$1;
@@ -32866,6 +32867,88 @@ function NotFound() {
 //#region src/assets/design-sem-nome-9-d553a.png
 var design_sem_nome_9_d553a_default = "/assets/design-sem-nome-9-d553a-bfuEFW2X.png";
 //#endregion
+//#region src/components/ui/sheet.tsx
+var Sheet = Root$1;
+var SheetTrigger = Trigger;
+var SheetPortal = Portal;
+var SheetOverlay = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Overlay, {
+	"data-uid": "src/components/ui/sheet.tsx:21:3",
+	"data-prohibitions": "[editContent]",
+	className: cn$1("fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className),
+	...props,
+	ref
+}));
+SheetOverlay.displayName = Overlay.displayName;
+var sheetVariants = cva("fixed z-50 gap-4 bg-background p-6 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500", {
+	variants: { side: {
+		top: "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
+		bottom: "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
+		left: "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm",
+		right: "inset-y-0 right-0 h-full w-3/4  border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm"
+	} },
+	defaultVariants: { side: "right" }
+});
+var SheetContent = import_react.forwardRef(({ side = "right", className, children, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetPortal, {
+	"data-uid": "src/components/ui/sheet.tsx:60:3",
+	"data-prohibitions": "[editContent]",
+	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetOverlay, {
+		"data-uid": "src/components/ui/sheet.tsx:61:5",
+		"data-prohibitions": "[editContent]"
+	}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Content, {
+		"data-uid": "src/components/ui/sheet.tsx:62:5",
+		"data-prohibitions": "[editContent]",
+		ref,
+		className: cn$1(sheetVariants({ side }), className),
+		...props,
+		children: [children, /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Close, {
+			"data-uid": "src/components/ui/sheet.tsx:64:7",
+			"data-prohibitions": "[]",
+			className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {
+				"data-uid": "src/components/ui/sheet.tsx:65:9",
+				"data-prohibitions": "[editContent]",
+				className: "h-4 w-4"
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				"data-uid": "src/components/ui/sheet.tsx:66:9",
+				"data-prohibitions": "[]",
+				className: "sr-only",
+				children: "Close"
+			})]
+		})]
+	})]
+}));
+SheetContent.displayName = Content.displayName;
+var SheetHeader = ({ className, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+	"data-uid": "src/components/ui/sheet.tsx:74:3",
+	"data-prohibitions": "[editContent]",
+	className: cn$1("flex flex-col space-y-2 text-center sm:text-left", className),
+	...props
+});
+SheetHeader.displayName = "SheetHeader";
+var SheetFooter = ({ className, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+	"data-uid": "src/components/ui/sheet.tsx:79:3",
+	"data-prohibitions": "[editContent]",
+	className: cn$1("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className),
+	...props
+});
+SheetFooter.displayName = "SheetFooter";
+var SheetTitle = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Title, {
+	"data-uid": "src/components/ui/sheet.tsx:90:3",
+	"data-prohibitions": "[editContent]",
+	ref,
+	className: cn$1("text-lg font-semibold text-foreground", className),
+	...props
+}));
+SheetTitle.displayName = Title.displayName;
+var SheetDescription = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Description, {
+	"data-uid": "src/components/ui/sheet.tsx:102:3",
+	"data-prohibitions": "[editContent]",
+	ref,
+	className: cn$1("text-sm text-muted-foreground", className),
+	...props
+}));
+SheetDescription.displayName = Description.displayName;
+//#endregion
 //#region src/components/Header.tsx
 function Header() {
 	const [isScrolled, setIsScrolled] = (0, import_react.useState)(false);
@@ -32897,22 +32980,22 @@ function Header() {
 		}
 	];
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
-		"data-uid": "src/components/Header.tsx:30:5",
+		"data-uid": "src/components/Header.tsx:31:5",
 		"data-prohibitions": "[editContent]",
 		className: "fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-6 lg:px-8 transition-all duration-300 pointer-events-none",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			"data-uid": "src/components/Header.tsx:31:7",
+			"data-uid": "src/components/Header.tsx:32:7",
 			"data-prohibitions": "[editContent]",
 			className: cn$1("max-w-5xl mx-auto rounded-full transition-all duration-300 flex items-center justify-between px-6 py-3 pointer-events-auto", isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg border border-slate-200/50" : "bg-white/90 backdrop-blur-sm shadow border border-slate-100"),
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-					"data-uid": "src/components/Header.tsx:39:9",
+					"data-uid": "src/components/Header.tsx:40:9",
 					"data-prohibitions": "[]",
 					to: "/",
 					className: "flex-shrink-0 z-50",
 					onClick: () => setMobileMenuOpen(false),
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						"data-uid": "src/components/Header.tsx:40:11",
+						"data-uid": "src/components/Header.tsx:41:11",
 						"data-prohibitions": "[editContent]",
 						src: design_sem_nome_9_d553a_default,
 						alt: "Bankap Banco",
@@ -32920,59 +33003,95 @@ function Header() {
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
-					"data-uid": "src/components/Header.tsx:48:9",
+					"data-uid": "src/components/Header.tsx:49:9",
 					"data-prohibitions": "[editContent]",
 					className: "hidden md:flex items-center space-x-8",
 					children: [navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						"data-uid": "src/components/Header.tsx:50:13",
+						"data-uid": "src/components/Header.tsx:51:13",
 						"data-prohibitions": "[editContent]",
 						href: link.href,
 						className: "text-sm font-semibold text-slate-700 hover:text-[#d60d37] transition-colors",
 						children: link.name
 					}, link.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-						"data-uid": "src/components/Header.tsx:58:11",
+						"data-uid": "src/components/Header.tsx:59:11",
 						"data-prohibitions": "[]",
 						onClick: openModal,
 						className: "bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 transition-opacity text-white rounded-full px-6 font-semibold",
 						children: "Fale com Especialista"
 					})]
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"data-uid": "src/components/Header.tsx:67:9",
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Sheet, {
+					"data-uid": "src/components/Header.tsx:68:9",
 					"data-prohibitions": "[editContent]",
-					className: "md:hidden z-50 p-2 text-slate-700 hover:text-[#d60d37] transition-colors",
-					onClick: () => setMobileMenuOpen(!mobileMenuOpen),
-					"aria-label": "Toggle menu",
-					children: mobileMenuOpen ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {
-						"data-uid": "src/components/Header.tsx:72:29",
-						"data-prohibitions": "[editContent]",
-						size: 28
-					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
-						"data-uid": "src/components/Header.tsx:72:47",
-						"data-prohibitions": "[editContent]",
-						size: 28
-					})
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					"data-uid": "src/components/Header.tsx:76:9",
-					"data-prohibitions": "[editContent]",
-					className: cn$1("fixed inset-0 bg-white/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-300 ease-in-out md:hidden", mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"),
-					children: [navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						"data-uid": "src/components/Header.tsx:83:13",
-						"data-prohibitions": "[editContent]",
-						href: link.href,
-						className: "text-2xl font-bold text-slate-800 hover:text-[#d60d37] transition-colors",
-						onClick: () => setMobileMenuOpen(false),
-						children: link.name
-					}, link.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-						"data-uid": "src/components/Header.tsx:92:11",
+					open: mobileMenuOpen,
+					onOpenChange: setMobileMenuOpen,
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTrigger, {
+						"data-uid": "src/components/Header.tsx:69:11",
 						"data-prohibitions": "[]",
-						onClick: () => {
-							setMobileMenuOpen(false);
-							openModal();
-						},
-						className: "bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full px-10 py-6 text-lg font-bold mt-4 shadow-lg",
-						children: "Fale com Especialista"
+						asChild: true,
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+							"data-uid": "src/components/Header.tsx:70:13",
+							"data-prohibitions": "[]",
+							className: "md:hidden z-50 p-2 text-slate-700 hover:text-[#d60d37] transition-colors",
+							"aria-label": "Toggle menu",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {
+								"data-uid": "src/components/Header.tsx:74:15",
+								"data-prohibitions": "[editContent]",
+								size: 28
+							})
+						})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetContent, {
+						"data-uid": "src/components/Header.tsx:77:11",
+						"data-prohibitions": "[editContent]",
+						side: "right",
+						className: "w-[300px] sm:w-[400px] flex flex-col justify-between border-l border-slate-200 bg-white/95 backdrop-blur-xl",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetHeader, {
+								"data-uid": "src/components/Header.tsx:81:13",
+								"data-prohibitions": "[]",
+								className: "text-left",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTitle, {
+									"data-uid": "src/components/Header.tsx:82:15",
+									"data-prohibitions": "[]",
+									className: "sr-only",
+									children: "Menu de Navegação"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									"data-uid": "src/components/Header.tsx:83:15",
+									"data-prohibitions": "[editContent]",
+									src: design_sem_nome_9_d553a_default,
+									alt: "Bankap Banco",
+									className: "h-10 w-auto object-contain mb-8 ml-0"
+								})]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+								"data-uid": "src/components/Header.tsx:89:13",
+								"data-prohibitions": "[editContent]",
+								className: "flex flex-col space-y-6 flex-1 mt-8",
+								children: navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									"data-uid": "src/components/Header.tsx:91:17",
+									"data-prohibitions": "[editContent]",
+									href: link.href,
+									className: "text-xl font-bold text-slate-800 hover:text-[#d60d37] transition-colors border-b border-slate-100 pb-4",
+									onClick: () => setMobileMenuOpen(false),
+									children: link.name
+								}, link.name))
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								"data-uid": "src/components/Header.tsx:101:13",
+								"data-prohibitions": "[]",
+								className: "pb-8 mt-auto",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+									"data-uid": "src/components/Header.tsx:102:15",
+									"data-prohibitions": "[]",
+									onClick: () => {
+										setMobileMenuOpen(false);
+										openModal();
+									},
+									className: "w-full bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full py-6 text-lg font-bold shadow-lg",
+									children: "Fale com Especialista"
+								})
+							})
+						]
 					})]
 				})
 			]
@@ -33347,4 +33466,4 @@ var App = () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrowserRouter, {
 }));
 //#endregion
 
-//# sourceMappingURL=index-oB1F1gBf.js.map
+//# sourceMappingURL=index-B4NiJEE-.js.map

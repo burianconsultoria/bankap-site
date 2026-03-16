@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useModal } from '@/contexts/ModalContext'
 import { cn } from '@/lib/utils'
 import logoPositive from '@/assets/design-sem-nome-9-d553a.png'
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -63,42 +64,53 @@ export function Header() {
           </Button>
         </nav>
 
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden z-50 p-2 text-slate-700 hover:text-[#d60d37] transition-colors"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-
-        {/* Mobile Nav */}
-        <div
-          className={cn(
-            'fixed inset-0 bg-white/98 backdrop-blur-xl z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-300 ease-in-out md:hidden',
-            mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible',
-          )}
-        >
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-2xl font-bold text-slate-800 hover:text-[#d60d37] transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
+        {/* Mobile menu */}
+        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+          <SheetTrigger asChild>
+            <button
+              className="md:hidden z-50 p-2 text-slate-700 hover:text-[#d60d37] transition-colors"
+              aria-label="Toggle menu"
             >
-              {link.name}
-            </a>
-          ))}
-          <Button
-            onClick={() => {
-              setMobileMenuOpen(false)
-              openModal()
-            }}
-            className="bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full px-10 py-6 text-lg font-bold mt-4 shadow-lg"
+              <Menu size={28} />
+            </button>
+          </SheetTrigger>
+          <SheetContent
+            side="right"
+            className="w-[300px] sm:w-[400px] flex flex-col justify-between border-l border-slate-200 bg-white/95 backdrop-blur-xl"
           >
-            Fale com Especialista
-          </Button>
-        </div>
+            <SheetHeader className="text-left">
+              <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
+              <img
+                src={logoPositive}
+                alt="Bankap Banco"
+                className="h-10 w-auto object-contain mb-8 ml-0"
+              />
+            </SheetHeader>
+            <nav className="flex flex-col space-y-6 flex-1 mt-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-xl font-bold text-slate-800 hover:text-[#d60d37] transition-colors border-b border-slate-100 pb-4"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
+            <div className="pb-8 mt-auto">
+              <Button
+                onClick={() => {
+                  setMobileMenuOpen(false)
+                  openModal()
+                }}
+                className="w-full bg-gradient-to-r from-[#d60d37] to-[#a20d37] hover:opacity-90 text-white rounded-full py-6 text-lg font-bold shadow-lg"
+              >
+                Fale com Especialista
+              </Button>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   )

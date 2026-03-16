@@ -786,10 +786,6 @@ section[aria-label='Notifications alt+T'] {
   z-index: 30;
 }
 
-.z-40{
-  z-index: 40;
-}
-
 .z-50{
   z-index: 50;
 }
@@ -920,6 +916,10 @@ section[aria-label='Notifications alt+T'] {
   margin-bottom: 2rem;
 }
 
+.ml-0{
+  margin-left: 0px;
+}
+
 .ml-1{
   margin-left: 0.25rem;
 }
@@ -962,6 +962,10 @@ section[aria-label='Notifications alt+T'] {
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .mt-auto{
@@ -1284,6 +1288,10 @@ section[aria-label='Notifications alt+T'] {
 
 .w-\[280px\]{
   width: 280px;
+}
+
+.w-\[300px\]{
+  width: 300px;
 }
 
 .w-\[50\%\]{
@@ -1663,10 +1671,10 @@ section[aria-label='Notifications alt+T'] {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]){
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-auto{
@@ -1851,6 +1859,11 @@ section[aria-label='Notifications alt+T'] {
 .border-slate-100{
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
 }
 
 .border-slate-200\/50{
@@ -2165,11 +2178,6 @@ section[aria-label='Notifications alt+T'] {
   padding-right: 0.25rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2273,6 +2281,10 @@ section[aria-label='Notifications alt+T'] {
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .pl-2{
@@ -4067,6 +4079,10 @@ section[aria-label='Notifications alt+T'] {
 
   .sm\:w-\[340px\]{
     width: 340px;
+  }
+
+  .sm\:w-\[400px\]{
+    width: 400px;
   }
 
   .sm\:w-auto{
